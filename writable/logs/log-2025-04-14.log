@@ -1,0 +1,70 @@
+INFO - 2025-04-14 07:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-14 07:21:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'projectbnsp_ari', 3306, '', 0)
+#1 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Users\ASUS\Downloads\projectbnsp_ariandika\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 C:\Users\ASUS\Downloads\projectbnsp_ariandika\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#8 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\ASUS\Downloads\projectbnsp_ariandika\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\Users\ASUS\Downloads\projectbnsp_ariandika\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#6 C:\Users\ASUS\Downloads\projectbnsp_ariandika\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#7 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#8 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Downloads\projectbnsp_ariandika\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Downloads\projectbnsp_ariandika\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2025-04-14 07:21:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Downloads\\projectbnsp_ariandika\\public\\index.php')
+INFO - 2025-04-14 07:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-14 07:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

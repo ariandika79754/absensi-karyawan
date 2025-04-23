@@ -1,0 +1,531 @@
+CRITICAL - 2023-12-04 11:39:08 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:39:10 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:40:05 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:40:06 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:40:07 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:40:50 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:40:50 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:41:46 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:41:46 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:41:48 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:41:48 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:42:16 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:42:16 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:42:30 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:42:30 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:42:31 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:42:31 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:42:32 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:42:32 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:44:18 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:44:18 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:44:19 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:44:19 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(4, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(4, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(4194304)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:44:19 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:44:19 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:44:19 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:44:19 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(4, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(4, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(4194304)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:45:36 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:45:36 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(4, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(4, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(4194304)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:45:36 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:45:36 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(4, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(4, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(4194304)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:51:27 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:51:27 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:51:32 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:51:32 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:59:45 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:59:45 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:59:45 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:59:45 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:59:46 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:59:46 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:59:46 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:59:46 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:59:46 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:59:46 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:59:52 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 11:59:52 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(6, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(6, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 12:36:23 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 12:36:23 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(4, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(4, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(4194304)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 12:36:25 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 12:36:25 --> Uncaught Error: Class 'Locale' not found in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Helpers/number_helper.php(55): format_number(4, 2, NULL, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(145): number_to_size(4, 2)
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/errors/html/error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(4194304)
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(241): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\Fr
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

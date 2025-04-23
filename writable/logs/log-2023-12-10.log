@@ -1,0 +1,1651 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+INFO - 2023-12-10 00:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 00:27:55 --> Undefined variable $matakuliah
+in APPPATH\Views\konten\kps\kelas\jenis\index.php on line 36.
+ 1 APPPATH\Views\konten\kps\kelas\jenis\index.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $matakuliah', 'C:\\xampp1\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\kps\\kelas\\jenis\\index.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp1\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\kps\\kelas\\jenis\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/kps/kelas/jenis/index', [], true)
+ 5 APPPATH\Controllers\KpsTipeKelas.php(23): view('konten/kps/kelas/jenis/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KpsTipeKelas->KelasJenis()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KpsTipeKelas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 00:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 00:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 01:01:53 --> Call to undefined method App\Models\Kps\KpsKelasMasterModel::getAllKelasMaster
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\KpsKelasMaster.php(21): CodeIgniter\Model->__call('getAllKelasMaster', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KpsKelasMaster->KelasMaster()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KpsKelasMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 01:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 01:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 03:04:21 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp1\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp1\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'pembelajaran_po...', 3306, '', 0)
+#1 C:\xampp1\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp1\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp1\htdocs\pembelajaran-pnl\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp1\htdocs\pembelajaran-pnl\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp1\htdocs\pembelajaran-pnl\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp1\htdocs\pembelajaran-pnl\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 C:\xampp1\htdocs\pembelajaran-pnl\app\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('mi@polinela.ac....', 'pembelajaran')
+#8 C:\xampp1\htdocs\pembelajaran-pnl\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 C:\xampp1\htdocs\pembelajaran-pnl\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp1\htdocs\pembelajaran-pnl\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\pembelajaran-pnl\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\pembelajaran-pnl\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp1\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp1\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp1\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp1\htdocs\pembelajaran-pnl\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\xampp1\htdocs\pembelajaran-pnl\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp1\htdocs\pembelajaran-pnl\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp1\htdocs\pembelajaran-pnl\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#6 C:\xampp1\htdocs\pembelajaran-pnl\app\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('mi@polinela.ac....', 'pembelajaran')
+#7 C:\xampp1\htdocs\pembelajaran-pnl\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#8 C:\xampp1\htdocs\pembelajaran-pnl\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp1\htdocs\pembelajaran-pnl\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\pembelajaran-pnl\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\pembelajaran-pnl\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdoc...')
+#12 {main}
+CRITICAL - 2023-12-10 03:04:21 --> Unable to connect to the database.
+=======
+INFO - 2023-12-10 03:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 03:26:21 --> mysqli_sql_exception: Table 'pembelajaran_polinela.users' doesn't exist in engine in C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `users`....', 0)
+#1 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp2\htdocs\pembelajaran-pnl\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\pembelajaran-pnl\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp2\htdocs\pembelajaran-pnl\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 C:\xampp2\htdocs\pembelajaran-pnl\app\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+#8 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\pembelajaran-pnl\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp2\htdocs\pembelajaran-pnl\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#13 {main}
+CRITICAL - 2023-12-10 03:26:21 --> Table 'pembelajaran_polinela.users' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 03:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 03:27:08 --> mysqli_sql_exception: Table 'pembelajaran_polinela.users' doesn't exist in engine in C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `users`....', 0)
+#1 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp2\htdocs\pembelajaran-pnl\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\pembelajaran-pnl\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp2\htdocs\pembelajaran-pnl\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 C:\xampp2\htdocs\pembelajaran-pnl\app\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+#8 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\pembelajaran-pnl\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp2\htdocs\pembelajaran-pnl\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#13 {main}
+CRITICAL - 2023-12-10 03:27:08 --> Table 'pembelajaran_polinela.users' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 03:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 03:29:03 --> mysqli_sql_exception: Table 'pembelajaran_polinela.users' doesn't exist in engine in C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `users`....', 0)
+#1 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp2\htdocs\pembelajaran-pnl\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\pembelajaran-pnl\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp2\htdocs\pembelajaran-pnl\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 C:\xampp2\htdocs\pembelajaran-pnl\app\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+#8 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\pembelajaran-pnl\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp2\htdocs\pembelajaran-pnl\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#13 {main}
+CRITICAL - 2023-12-10 03:29:03 --> Table 'pembelajaran_polinela.users' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+CRITICAL - 2023-12-10 05:50:46 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 218.
+ 1 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-10 05:50:46 --> Uncaught Error: Class "Locale" not found in C:\xampp2\htdocs\pembelajaran-pnl\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp2\htdocs\pembelajaran-pnl\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp2\htdocs\pembelajaran-pnl\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp2\htdocs\pembelajaran-pnl\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp2\htdocs\pembelajaran-pnl\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp2\htdocs\pembelajaran-pnl\system\Debug\Exceptions.php(148): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp2\htdocs\pembelajaran-pnl\spark(88): CodeIgniter\CodeIgniter->initialize()
+#1 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-10 04:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 04:51:23 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pembelajaran_polinela' in C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'pembelajaran_po...', 3306, '', 0)
+#1 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp2\htdocs\pembelajaran-pnl\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\pembelajaran-pnl\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp2\htdocs\pembelajaran-pnl\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 C:\xampp2\htdocs\pembelajaran-pnl\app\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+#8 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\pembelajaran-pnl\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp2\htdocs\pembelajaran-pnl\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pembelajaran_polinela' in C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\xampp2\htdocs\pembelajaran-pnl\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\pembelajaran-pnl\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp2\htdocs\pembelajaran-pnl\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#6 C:\xampp2\htdocs\pembelajaran-pnl\app\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+#7 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#8 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\pembelajaran-pnl\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\pembelajaran-pnl\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#12 {main}
+CRITICAL - 2023-12-10 04:51:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pembelajaran_polinela'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 04:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 04:55:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$session is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+WARNING - 2023-12-10 04:55:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$validation is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 04:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 04:55:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$session is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+WARNING - 2023-12-10 04:55:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$validation is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 04:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 05:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 05:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 05:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 05:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 05:53:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJabatan::$session is deprecated in APPPATH\Controllers\AdminJabatan.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJabatan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+WARNING - 2023-12-10 05:53:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJabatan::$validation is deprecated in APPPATH\Controllers\AdminJabatan.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJabatan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 05:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 05:53:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJabatan::$session is deprecated in APPPATH\Controllers\AdminJabatan.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJabatan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+WARNING - 2023-12-10 05:53:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJabatan::$validation is deprecated in APPPATH\Controllers\AdminJabatan.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJabatan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 05:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 05:53:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJabatan::$session is deprecated in APPPATH\Controllers\AdminJabatan.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJabatan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+WARNING - 2023-12-10 05:53:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJabatan::$validation is deprecated in APPPATH\Controllers\AdminJabatan.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJabatan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 05:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 05:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 05:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 05:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 05:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 05:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 05:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:00:23 --> Attempt to read property "id" on null
+in APPPATH\Views\konten\admin\master\gedung\edit.php on line 17.
+ 1 APPPATH\Views\konten\admin\master\gedung\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\admin\\master\\gedung\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\admin\\master\\gedung\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/master/gedung/edit', [], true)
+ 5 APPPATH\Controllers\AdminMaster.php(684): view('konten/admin/master/gedung/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editTeknisi('NzA3Mjc0MTktMjFlNy00YmYxLWE2MzctZjZmYmQzNzM2NjZk')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 06:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:01:40 --> Call to undefined method App\Models\Admin\GedungModel::getTeknisiById
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\AdminMaster.php(680): CodeIgniter\Model->__call('getTeknisiById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editTeknisi('NzA3Mjc0MTktMjFlNy00YmYxLWE2MzctZjZmYmQzNzM2NjZk')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 06:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:02:29 --> Call to undefined method App\Models\Admin\GedungModel::getTeknisiById
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\AdminMaster.php(680): CodeIgniter\Model->__call('getTeknisiById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editTeknisi('NzA3Mjc0MTktMjFlNy00YmYxLWE2MzctZjZmYmQzNzM2NjZk')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 06:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:06:25 --> Undefined variable $jurusan
+in APPPATH\Views\konten\admin\master\teknisi\edit.php on line 42.
+ 1 APPPATH\Views\konten\admin\master\teknisi\edit.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jurusan', 'C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\admin\\master\\teknisi\\edit.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\admin\\master\\teknisi\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/master/teknisi/edit', [], true)
+ 5 APPPATH\Controllers\AdminMaster.php(684): view('konten/admin/master/teknisi/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editTeknisi('NzA3Mjc0MTktMjFlNy00YmYxLWE2MzctZjZmYmQzNzM2NjZk')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 06:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:19:41 --> Undefined variable $jenjang
+in APPPATH\Views\konten\admin\master\prodi\edit.php on line 49.
+ 1 APPPATH\Views\konten\admin\master\prodi\edit.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenjang', 'C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\admin\\master\\prodi\\edit.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\admin\\master\\prodi\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/master/prodi/edit', [], true)
+ 5 APPPATH\Controllers\AdminMaster.php(535): view('konten/admin/master/prodi/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editProdi('NGM1MmU5N2MtNTI0Mi00Njk0LTg1ODgtYjUzZjFiYjI2N2Y2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 06:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:20:11 --> Undefined array key "jenjang_id"
+in APPPATH\Views\konten\admin\master\prodi\edit.php on line 50.
+ 1 APPPATH\Views\konten\admin\master\prodi\edit.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jenjang_id"', 'C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\admin\\master\\prodi\\edit.php', 50)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\admin\\master\\prodi\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/master/prodi/edit', [], true)
+ 5 APPPATH\Controllers\AdminMaster.php(535): view('konten/admin/master/prodi/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editProdi('NGM1MmU5N2MtNTI0Mi00Njk0LTg1ODgtYjUzZjFiYjI2N2Y2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 06:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:22:45 --> "Kolom Kode Prodi Harus diisi" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Kolom Kode Prodi Harus diisi')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('kode_prodi', 'kode_prodi', '07530', [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\AdminMaster.php(540): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editProdiPost('NGM1MmU5N2MtNTI0Mi00Njk0LTg1ODgtYjUzZjFiYjI2N2Y2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 06:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:26:39 --> "Kolom Kode Prodi Harus diisi" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Kolom Kode Prodi Harus diisi')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('kode_prodi', 'kode_prodi', '07530', [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\AdminMaster.php(540): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editProdiPost('NGM1MmU5N2MtNTI0Mi00Njk0LTg1ODgtYjUzZjFiYjI2N2Y2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 06:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:26:43 --> Undefined variable $jurusan
+in APPPATH\Views\konten\admin\master\prodi\edit.php on line 85.
+ 1 APPPATH\Views\konten\admin\master\prodi\edit.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jurusan', 'C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\admin\\master\\prodi\\edit.php', 85)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\admin\\master\\prodi\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/master/prodi/edit', [], true)
+ 5 APPPATH\Controllers\AdminMaster.php(535): view('konten/admin/master/prodi/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editProdi('NGM1MmU5N2MtNTI0Mi00Njk0LTg1ODgtYjUzZjFiYjI2N2Y2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 06:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:26:48 --> Undefined variable $jurusan
+in APPPATH\Views\konten\admin\master\prodi\edit.php on line 85.
+ 1 APPPATH\Views\konten\admin\master\prodi\edit.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jurusan', 'C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\admin\\master\\prodi\\edit.php', 85)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Views\\konten\\admin\\master\\prodi\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/master/prodi/edit', [], true)
+ 5 APPPATH\Controllers\AdminMaster.php(535): view('konten/admin/master/prodi/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editProdi('NGM1MmU5N2MtNTI0Mi00Njk0LTg1ODgtYjUzZjFiYjI2N2Y2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 06:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:37:25 --> syntax error, unexpected token "endif", expecting end of file
+in APPPATH\Views\konten\admin\master\prodi\edit.php on line 35.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/master/prodi/edit', [], true)
+ 3 APPPATH\Controllers\AdminMaster.php(536): view('konten/admin/master/prodi/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editProdi('NGEyYWMzYzAtNDlmMC00ZmJlLTlkOTQtYmE3N2Y0ZmUxZmNi')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 06:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:37:47 --> syntax error, unexpected token "endif", expecting end of file
+in APPPATH\Views\konten\admin\master\prodi\edit.php on line 35.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/master/prodi/edit', [], true)
+ 3 APPPATH\Controllers\AdminMaster.php(536): view('konten/admin/master/prodi/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editProdi('NGEyYWMzYzAtNDlmMC00ZmJlLTlkOTQtYmE3N2Y0ZmUxZmNi')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 06:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 07:36:40 --> "Kolom nip Harus diisi" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Kolom nip Harus diisi')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('nip', 'nip', '0189832567854907854', [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\AdminMaster.php(715): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editTeknisiPost('NzA3Mjc0MTktMjFlNy00YmYxLWE2MzctZjZmYmQzNzM2NjZk')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 07:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 07:44:22 --> "Kolom nip Harus diisi" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Kolom nip Harus diisi')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('nip', 'nip', '0189832567854907854', [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\AdminMaster.php(715): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editTeknisiPost('admin', 'master', 'teknisi', 'edit')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 07:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 07:44:43 --> "Kolom nip Harus diisi" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Kolom nip Harus diisi')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('nip', 'nip', '0189832567854907854', [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\AdminMaster.php(715): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editTeknisiPost('admin', 'master', 'teknisi', 'edit')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 07:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 07:46:36 --> "Kolom nip Harus diisi" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Kolom nip Harus diisi')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('nip', 'nip', '0189832567854907859', [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\AdminMaster.php(715): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editTeknisiPost('admin', 'master', 'teknisi', 'edit')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 07:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 07:50:06 --> "Kolom Nama Harus diisi" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Kolom Nama Harus diisi')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('nama', 'nama', 'RISKI HIDAYAT', [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\AdminMaster.php(715): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editTeknisiPost('admin', 'master', 'teknisi', 'edit')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 07:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 07:50:57 --> "File TTD harus diunggah" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('File TTD harus diunggah')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('sk_pendirian', 'sk_pendirian', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\AdminMaster.php(715): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editTeknisiPost('admin', 'master', 'teknisi', 'edit')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+CRITICAL - 2023-12-10 07:52:14 --> syntax error, unexpected single-quoted string "uploaded", expecting "]"
+in APPPATH\Controllers\AdminMaster.php on line 738.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Controllers\\AdminMaster.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminMaster')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminMaster')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AdminMaster', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 07:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 07:54:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$session is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+WARNING - 2023-12-10 07:54:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$validation is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 07:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 08:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 08:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 08:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 08:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 08:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 08:06:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$session is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+WARNING - 2023-12-10 08:06:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$validation is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 08:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 08:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 08:06:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$session is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+WARNING - 2023-12-10 08:06:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$validation is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 08:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 08:06:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$session is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+WARNING - 2023-12-10 08:06:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$validation is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+CRITICAL - 2023-12-10 08:06:30 --> Undefined property: App\Controllers\AdminMahasiswa::$kajurModel
+in APPPATH\Controllers\AdminMahasiswa.php on line 41.
+ 1 APPPATH\Controllers\AdminMahasiswa.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminMahasiswa::$kajurModel', 'C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Controllers\\AdminMahasiswa.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMahasiswa->addMahasiswa()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 08:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 08:06:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$session is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+WARNING - 2023-12-10 08:06:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$validation is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 08:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-10 08:35:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$session is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+WARNING - 2023-12-10 08:35:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminMahasiswa::$validation is deprecated in APPPATH\Controllers\AdminMahasiswa.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminMahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+CRITICAL - 2023-12-10 08:35:18 --> Undefined property: App\Controllers\AdminMahasiswa::$kajurModel
+in APPPATH\Controllers\AdminMahasiswa.php on line 41.
+ 1 APPPATH\Controllers\AdminMahasiswa.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminMahasiswa::$kajurModel', 'C:\\xampp2\\htdocs\\pembelajaran-pnl\\app\\Controllers\\AdminMahasiswa.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMahasiswa->addMahasiswa()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 10:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 10:31:08 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'pembelajaran_po...', 3306, '', 0)
+#1 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp2\htdocs\pembelajaran-pnl\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\pembelajaran-pnl\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp2\htdocs\pembelajaran-pnl\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 C:\xampp2\htdocs\pembelajaran-pnl\app\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+#8 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\pembelajaran-pnl\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp2\htdocs\pembelajaran-pnl\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\xampp2\htdocs\pembelajaran-pnl\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\pembelajaran-pnl\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp2\htdocs\pembelajaran-pnl\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#6 C:\xampp2\htdocs\pembelajaran-pnl\app\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+#7 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#8 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\pembelajaran-pnl\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\pembelajaran-pnl\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#12 {main}
+CRITICAL - 2023-12-10 10:31:08 --> Unable to connect to the database.
+>>>>>>> dev-riski
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+<<<<<<< HEAD
+ 6 APPPATH\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('mi@polinela.ac.id', 'pembelajaran')
+=======
+ 6 APPPATH\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+>>>>>>> dev-riski
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+<<<<<<< HEAD
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 03:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:45:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 13:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 14:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+INFO - 2023-12-10 02:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 02:27:43 --> Call to undefined method App\Models\Admin\JurusanModel::getJurusanId
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/AdminJabatan.php(58): CodeIgniter\Model->__call('getJurusanId', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->editKajur('NjMwNGQ1ZjMtM2E5Yy00NzA3LTgxNzAtM2NmNTdkMWYxY2Fh')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 02:28:07 --> Call to undefined method App\Models\Admin\JurusanModel::getKajurById
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/AdminJabatan.php(58): CodeIgniter\Model->__call('getKajurById', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->editKajur('NjMwNGQ1ZjMtM2E5Yy00NzA3LTgxNzAtM2NmNTdkMWYxY2Fh')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 02:28:48 --> Undefined variable $jurusan
+in APPPATH/Views/konten/admin/jabatan/kajur/edit.php on line 36.
+ 1 APPPATH/Views/konten/admin/jabatan/kajur/edit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jurusan', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/kajur/edit.php', 36)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/kajur/edit.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/jabatan/kajur/edit', [], true)
+ 5 APPPATH/Controllers/AdminJabatan.php(60): view('konten/admin/jabatan/kajur/edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->editKajur('NjMwNGQ1ZjMtM2E5Yy00NzA3LTgxNzAtM2NmNTdkMWYxY2Fh')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 02:30:52 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `dosen`....', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dosen`....')
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dosen`....')
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dosen`....', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Models/Admin/KonfigurasiKajurModel.php(49): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Controllers/AdminJabatan.php(58): App\Models\Admin\KonfigurasiKajurModel->getKajurById('6304d5f3-3a9c-4...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(942): App\Controllers\AdminJabatan->editKajur('NjMwNGQ1ZjMtM2E...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+#9 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2023-12-10 02:30:52 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dosen`.`nama`, `jurusan`.`nama_jurusan`, `jabatan_kajur`.*
+FROM `jabatan_kajur`
+JOIN `dosen` ON `jabatan_kajur`.`dosen_id` = `dosen`.`id`
+JOIN `jurusan` ON `jabatan_kajur`.`jurusan_id` = `jurusan`.`id`
+WHERE `id` = :id:', [...], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/Admin/KonfigurasiKajurModel.php(49): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/AdminJabatan.php(58): App\Models\Admin\KonfigurasiKajurModel->getKajurById('6304d5f3-3a9c-4707-8170-3cf57d1f1caa')
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->editKajur('NjMwNGQ1ZjMtM2E5Yy00NzA3LTgxNzAtM2NmNTdkMWYxY2Fh')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 02:36:44 --> Cannot use object of type stdClass as array
+in APPPATH/Views/konten/admin/jabatan/kajur/edit.php on line 37.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/jabatan/kajur/edit', [], true)
+ 4 APPPATH/Controllers/AdminJabatan.php(61): view('konten/admin/jabatan/kajur/edit', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->editKajur('NjMwNGQ1ZjMtM2E5Yy00NzA3LTgxNzAtM2NmNTdkMWYxY2Fh')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 02:42:39 --> Undefined variable $tahunAkademik
+in APPPATH/Views/konten/admin/jabatan/kajur/edit.php on line 59.
+ 1 APPPATH/Views/konten/admin/jabatan/kajur/edit.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tahunAkademik', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/kajur/edit.php', 59)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/kajur/edit.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/jabatan/kajur/edit', [], true)
+ 5 APPPATH/Controllers/AdminJabatan.php(62): view('konten/admin/jabatan/kajur/edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->editKajur('NjMwNGQ1ZjMtM2E5Yy00NzA3LTgxNzAtM2NmNTdkMWYxY2Fh')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 02:47:39 --> Undefined variable $pekerjaan
+in APPPATH/Views/konten/admin/jabatan/kps/index.php on line 30.
+ 1 APPPATH/Views/konten/admin/jabatan/kps/index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pekerjaan', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/kps/index.php', 30)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/kps/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/jabatan/kps/index', [], true)
+ 5 APPPATH/Controllers/AdminJabatan.php(172): view('konten/admin/jabatan/kps/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->kps()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 02:49:24 --> Undefined array key "nama"
+in APPPATH/Views/konten/admin/jabatan/kps/index.php on line 38.
+ 1 APPPATH/Views/konten/admin/jabatan/kps/index.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/kps/index.php', 38)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/kps/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/jabatan/kps/index', [], true)
+ 5 APPPATH/Controllers/AdminJabatan.php(172): view('konten/admin/jabatan/kps/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->kps()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 02:49:50 --> Undefined array key "nama"
+in APPPATH/Views/konten/admin/jabatan/kps/index.php on line 38.
+ 1 APPPATH/Views/konten/admin/jabatan/kps/index.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/kps/index.php', 38)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/kps/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/jabatan/kps/index', [], true)
+ 5 APPPATH/Controllers/AdminJabatan.php(172): view('konten/admin/jabatan/kps/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->kps()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 02:50:50 --> Invalid file: "konten/admin/jabatan/kps/add.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten/admin/jabatan/kps/add.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/jabatan/kps/add', [], true)
+ 3 APPPATH/Controllers/AdminJabatan.php(183): view('konten/admin/jabatan/kps/add', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->addKps()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 02:53:52 --> Call to undefined method App\Models\Admin\JurusanModel::getAllProdi
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/AdminJabatan.php(181): CodeIgniter\Model->__call('getAllProdi', [])
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->addkps()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 02:54:10 --> Invalid file: "konten/admin/jabatan/kps/add.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten/admin/jabatan/kps/add.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/jabatan/kps/add', [], true)
+ 3 APPPATH/Controllers/AdminJabatan.php(184): view('konten/admin/jabatan/kps/add', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->addkps()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 02:57:28 --> Undefined property: stdClass::$nama
+in APPPATH/Views/konten/admin/jabatan/kps/edit.php on line 23.
+ 1 APPPATH/Views/konten/admin/jabatan/kps/edit.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/kps/edit.php', 23)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/kps/edit.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/jabatan/kps/edit', [], true)
+ 5 APPPATH/Controllers/AdminJabatan.php(195): view('konten/admin/jabatan/kps/edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->editKps('ZDY1MDgxMjQtNjY3Yy00MWI1LThiZTktNjc2NTU3ZDFjYWRi')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 02:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 02:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 03:50:04 --> Undefined property: App\Controllers\AdminJabatan::$timdisModel
+in APPPATH/Controllers/AdminJabatan.php on line 324.
+ 1 APPPATH/Controllers/AdminJabatan.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminJabatan::$timdisModel', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Controllers/AdminJabatan.php', 324)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->timdis()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 03:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 03:51:36 --> Undefined property: App\Controllers\AdminJabatan::$timdisModel
+in APPPATH/Controllers/AdminJabatan.php on line 324.
+ 1 APPPATH/Controllers/AdminJabatan.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminJabatan::$timdisModel', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Controllers/AdminJabatan.php', 324)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->timdis()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 03:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 03:51:37 --> Undefined property: App\Controllers\AdminJabatan::$timdisModel
+in APPPATH/Controllers/AdminJabatan.php on line 324.
+ 1 APPPATH/Controllers/AdminJabatan.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminJabatan::$timdisModel', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Controllers/AdminJabatan.php', 324)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->timdis()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 03:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 03:51:38 --> Undefined property: App\Controllers\AdminJabatan::$timdisModel
+in APPPATH/Controllers/AdminJabatan.php on line 324.
+ 1 APPPATH/Controllers/AdminJabatan.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AdminJabatan::$timdisModel', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Controllers/AdminJabatan.php', 324)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->timdis()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 03:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 03:52:14 --> mysqli_sql_exception: Unknown column 'timdis.status' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `dosen`....', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dosen`....')
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dosen`....')
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dosen`....', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Models/Admin/KonfigurasiTimdisModel.php(21): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Controllers/AdminJabatan.php(326): App\Models\Admin\KonfigurasiTimdisModel->getAllTimdis()
+#7 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(942): App\Controllers\AdminJabatan->timdis()
+#8 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+#9 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2023-12-10 03:52:14 --> Unknown column 'timdis.status' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dosen`.`nama`, `prodi`.`nama_prodi`, `timdis`.`email`, `timdis`.`status`, `timdis`.`id`
+FROM `timdis`
+JOIN `dosen` ON `timdis`.`dosen_id` = `dosen`.`id`
+JOIN `prodi` ON `timdis`.`prodi_id` = `prodi`.`id`
+ORDER BY `status` DESC', [], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/Admin/KonfigurasiTimdisModel.php(21): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/AdminJabatan.php(326): App\Models\Admin\KonfigurasiTimdisModel->getAllTimdis()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->timdis()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 03:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 03:53:00 --> mysqli_sql_exception: Unknown column 'timdis.status' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `dosen`....', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dosen`....')
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dosen`....')
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dosen`....', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Models/Admin/KonfigurasiTimdisModel.php(21): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Controllers/AdminJabatan.php(326): App\Models\Admin\KonfigurasiTimdisModel->getAllTimdis()
+#7 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(942): App\Controllers\AdminJabatan->timdis()
+#8 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+#9 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2023-12-10 03:53:00 --> Unknown column 'timdis.status' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dosen`.`nama`, `prodi`.`nama_prodi`, `timdis`.`email`, `timdis`.`status`, `timdis`.`id`
+FROM `timdis`
+JOIN `dosen` ON `timdis`.`dosen_id` = `dosen`.`id`
+JOIN `prodi` ON `timdis`.`prodi_id` = `prodi`.`id`
+ORDER BY `status` DESC', [], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/Admin/KonfigurasiTimdisModel.php(21): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/AdminJabatan.php(326): App\Models\Admin\KonfigurasiTimdisModel->getAllTimdis()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->timdis()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 03:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 03:53:42 --> mysqli_sql_exception: Unknown column 'timdis.status' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `dosen`....', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dosen`....')
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dosen`....')
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dosen`....', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Models/Admin/KonfigurasiTimdisModel.php(21): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Controllers/AdminJabatan.php(326): App\Models\Admin\KonfigurasiTimdisModel->getAllTimdis()
+#7 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(942): App\Controllers\AdminJabatan->timdis()
+#8 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+#9 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2023-12-10 03:53:42 --> Unknown column 'timdis.status' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `dosen`.`nama`, `prodi`.`nama_prodi`, `timdis`.`email`, `timdis`.`status`, `timdis`.`id`
+FROM `timdis`
+JOIN `dosen` ON `timdis`.`dosen_id` = `dosen`.`id`
+JOIN `prodi` ON `timdis`.`prodi_id` = `prodi`.`id`
+ORDER BY `status` DESC', [], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/Admin/KonfigurasiTimdisModel.php(21): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/AdminJabatan.php(326): App\Models\Admin\KonfigurasiTimdisModel->getAllTimdis()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->timdis()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 03:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 04:03:58 --> Undefined property: stdClass::$dosen_id
+in APPPATH/Views/konten/admin/jabatan/timdis/edit.php on line 23.
+ 1 APPPATH/Views/konten/admin/jabatan/timdis/edit.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$dosen_id', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/timdis/edit.php', 23)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/timdis/edit.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/jabatan/timdis/edit', [], true)
+ 5 APPPATH/Controllers/AdminJabatan.php(349): view('konten/admin/jabatan/timdis/edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->editTimdis('Mjk5Zjg0YTItYzU3MS00Yzc4LTk5NmUtNDFlZjM5YWM3ZmJj')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 04:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 04:04:31 --> Undefined property: stdClass::$status
+in APPPATH/Views/konten/admin/jabatan/timdis/edit.php on line 56.
+ 1 APPPATH/Views/konten/admin/jabatan/timdis/edit.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$status', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/timdis/edit.php', 56)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/admin/jabatan/timdis/edit.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/jabatan/timdis/edit', [], true)
+ 5 APPPATH/Controllers/AdminJabatan.php(349): view('konten/admin/jabatan/timdis/edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminJabatan->editTimdis('Mjk5Zjg0YTItYzU3MS00Yzc4LTk5NmUtNDFlZjM5YWM3ZmJj')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJabatan))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 04:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 06:46:53 --> Invalid file: "konten/kps/rencana/index.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten/kps/rencana/index.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/kps/rencana/index', [], true)
+ 3 APPPATH/Controllers/KpsJadwal.php(13): view('konten/kps/rencana/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\KpsJadwal->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KpsJadwal))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 06:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 07:06:25 --> Invalid file: "konten/kps/jadwal/add.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten/kps/jadwal/add.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/kps/jadwal/add', [], true)
+ 3 APPPATH/Controllers/KpsJadwal.php(21): view('konten/kps/jadwal/add', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\KpsJadwal->addJadwal()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KpsJadwal))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 07:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 07:09:04 --> Undefined variable $jurusan
+in APPPATH/Views/konten/kps/jadwal/add.php on line 28.
+ 1 APPPATH/Views/konten/kps/jadwal/add.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jurusan', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/kps/jadwal/add.php', 28)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/kps/jadwal/add.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/kps/jadwal/add', [], true)
+ 5 APPPATH/Controllers/KpsJadwal.php(21): view('konten/kps/jadwal/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\KpsJadwal->addJadwal()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KpsJadwal))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 07:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 07:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 08:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 08:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 08:45:50 --> Undefined property: stdClass::$nama
+in APPPATH/Views/konten/kps/jadwal/add.php on line 31.
+ 1 APPPATH/Views/konten/kps/jadwal/add.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/kps/jadwal/add.php', 31)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/kps/jadwal/add.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/kps/jadwal/add', [], true)
+ 5 APPPATH/Controllers/KpsJadwal.php(41): view('konten/kps/jadwal/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\KpsJadwal->addJadwal()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KpsJadwal))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 08:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 08:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 08:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 08:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 08:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 09:04:48 --> Undefined property: stdClass::$nama
+in APPPATH/Views/konten/kps/jadwal/add.php on line 50.
+ 1 APPPATH/Views/konten/kps/jadwal/add.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/kps/jadwal/add.php', 50)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/kps/jadwal/add.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/kps/jadwal/add', [], true)
+ 5 APPPATH/Controllers/KpsJadwal.php(42): view('konten/kps/jadwal/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\KpsJadwal->addJadwal()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KpsJadwal))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 09:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 09:04:49 --> Undefined property: stdClass::$nama
+in APPPATH/Views/konten/kps/jadwal/add.php on line 50.
+ 1 APPPATH/Views/konten/kps/jadwal/add.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/kps/jadwal/add.php', 50)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/kps/jadwal/add.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/kps/jadwal/add', [], true)
+ 5 APPPATH/Controllers/KpsJadwal.php(42): view('konten/kps/jadwal/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\KpsJadwal->addJadwal()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KpsJadwal))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 09:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 09:05:06 --> Undefined property: stdClass::$nama_mk
+in APPPATH/Views/konten/kps/jadwal/add.php on line 50.
+ 1 APPPATH/Views/konten/kps/jadwal/add.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_mk', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/kps/jadwal/add.php', 50)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/kps/jadwal/add.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/kps/jadwal/add', [], true)
+ 5 APPPATH/Controllers/KpsJadwal.php(42): view('konten/kps/jadwal/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\KpsJadwal->addJadwal()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KpsJadwal))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 09:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 09:12:44 --> Undefined variable $gedung
+in APPPATH/Views/konten/kps/jadwal/add.php on line 89.
+ 1 APPPATH/Views/konten/kps/jadwal/add.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gedung', '/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/kps/jadwal/add.php', 89)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/kps/jadwal/add.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/kps/jadwal/add', [], true)
+ 5 APPPATH/Controllers/KpsJadwal.php(42): view('konten/kps/jadwal/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\KpsJadwal->addJadwal()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KpsJadwal))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2023-12-10 09:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 09:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> 3b31794e94785124fbd7a19fcc0fe18e21242097
+=======
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 10:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 10:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 12:49:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'pembelajaran_po...', 3306, '', 0)
+#1 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp2\htdocs\pembelajaran-pnl\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\pembelajaran-pnl\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp2\htdocs\pembelajaran-pnl\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 C:\xampp2\htdocs\pembelajaran-pnl\app\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+#8 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\pembelajaran-pnl\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp2\htdocs\pembelajaran-pnl\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\pembelajaran-pnl\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\pembelajaran-pnl\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\xampp2\htdocs\pembelajaran-pnl\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\pembelajaran-pnl\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp2\htdocs\pembelajaran-pnl\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#6 C:\xampp2\htdocs\pembelajaran-pnl\app\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+#7 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#8 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp2\htdocs\pembelajaran-pnl\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\pembelajaran-pnl\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\pembelajaran-pnl\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#12 {main}
+CRITICAL - 2023-12-10 12:49:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Auth.php(57): App\Models\AuthModel->checkUser('Admin', 'pembelajaran')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\pembelajaran-pnl\\public\\index.php')
+INFO - 2023-12-10 12:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 12:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> dev-riski
