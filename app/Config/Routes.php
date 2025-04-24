@@ -72,12 +72,18 @@ $routes->group('karyawan', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('dashboard', 'KaryawanDashboard::index', ['filter' => 'authenticate']);
 
  // Ka
-    $routes->get('absensi', 'karyawanAbsensi::index');
-    $routes->get('absensi/add', 'karyawanAbsensi::add');
-    $routes->post('absensi/save', 'karyawanAbsensi::save');
-    $routes->get('absensi/edit/(:any)', 'karyawanAbsensi::edit/$1');
-    $routes->post('absensi/update/(:any)', 'karyawanAbsensi::update/$1');
-    $routes->get('absensi/delete/(:any)', 'karyawanAbsensi::deleteKaryawan/$1');
+    $routes->get('absensi', 'KaryawanAbsensi::index');
+    $routes->get('absensi/add', 'KaryawanAbsensi::add');
+    $routes->post('absensi/save', 'KaryawanAbsensi::save');
+    $routes->get('absensi/edit/(:any)', 'KaryawanAbsensi::edit/$1');
+    $routes->post('absensi/update/(:any)', 'KaryawanAbsensi::update/$1');
+    $routes->get('absensi/delete/(:any)', 'KaryawanAbsensi::deleteKaryawan/$1');
+    $routes->get('absensi/rekap-bulanan', 'KaryawanAbsensi::rekapBulanan');
+    $routes->get('absensi/rekap-bulanan/(:num)/(:num)', 'KaryawanAbsensi::rekapBulanan/$1/$2');
+    $routes->get('absensi/export-pdf', 'KaryawanAbsensi::exportPdf');
+
+
+
 
 
     // $routes->get('dashboard', 'PelangganDashboard::index');

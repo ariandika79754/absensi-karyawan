@@ -17,10 +17,10 @@
         </a>
     </li>
 
-    <li class="menu-item <?= ($request->uri->getSegment(2) === 'product') ? 'active  ' : '' ?>">
+    <li class="menu-item <?= ($request->uri->getSegment(2) === 'absensi') ? 'active  ' : '' ?>">
         <a href="/karyawan/absensi" class="menu-link">
-            <i class="menu-icon tf-icons bx bxs-file"></i>
-            <div data-i18n="pps">absensi</div>
+        <i class="menu-icon tf-icons bx bx-calendar-check"></i>
+            <div data-i18n="pps">Absensi Karyawan</div>
         </a>
     </li>
 

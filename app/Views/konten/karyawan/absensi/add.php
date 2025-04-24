@@ -10,23 +10,20 @@
                     <h5 class="card-header">Tambah Data Absensi</h5>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="/admin/absensi" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
+                    <a href="/karyawan/absensi" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
                     <!-- Form untuk menambah data absensi -->
-                    <form action="/admin/absensi/save" method="POST">
+                    <form action="/karyawan/absensi/save" method="POST">
                         <?= csrf_field() ?>
 
                         <div class="row">
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="users_id">Nama Karyawan</label>
-                                <select name="users_id" id="users_id" class="form-control" required>
-                                    <option value="">Pilih Karyawan</option>
-                                    <?php foreach ($users as $user): ?>
-                                        <option value="<?= $user['id'] ?>"><?= $user['nama'] ?></option>
-                                    <?php endforeach; ?>
-                                </select>
+                                <input type="text" class="form-control" value="<?= $users['nama'] ?>" readonly>
+                                <input type="hidden" name="users_id" value="<?= $users['id'] ?>">
                             </div>
+
 
                             <div class="col-lg-6 mb-3">
                                 <label for="tanggal" class="form-label">Tanggal</label>
