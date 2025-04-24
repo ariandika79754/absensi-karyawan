@@ -15,3 +15,89 @@ INFO - 2025-04-23 02:47:52 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2025-04-23 02:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-04-23 02:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-04-23 02:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-23 09:02:25 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'absensi_karyawan' in C:\radar\absensi-karyawan\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\radar\absensi-karyawan\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'absensi_karyawa...', 3306, '', 0)
+#1 C:\radar\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\radar\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\radar\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\radar\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\radar\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\radar\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 C:\radar\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#8 C:\radar\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 C:\radar\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\radar\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\radar\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\radar\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\radar\\absens...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'absensi_karyawan' in C:\radar\absensi-karyawan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\radar\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\radar\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\radar\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\radar\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\radar\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\radar\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#6 C:\radar\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#7 C:\radar\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#8 C:\radar\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\radar\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\radar\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\radar\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\radar\\absens...')
+#12 {main}
+CRITICAL - 2025-04-23 09:02:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'absensi_karyawan'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\radar\\absensi-karyawan\\public\\index.php')
+INFO - 2025-04-23 09:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-23 09:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

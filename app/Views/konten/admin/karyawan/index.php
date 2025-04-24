@@ -40,6 +40,7 @@
                                     <th>Alamat</th>
                                     <th>Nomor Handphone</th>
                                     <th>Jenis Kelamin</th>
+                                    <th>Tanggal Lahir</th>
                                     <th>Status</th>
                                     <th>Foto</th>
                                     <th>Aksi</th>
@@ -55,6 +56,7 @@
                                         <td><?= $row['alamat']; ?></td>
                                         <td><?= $row['no_hp']; ?></td>
                                         <td><?= $row['jenis_kelamin']; ?></td>
+                                        <td><?= $row['tanggal_lahir']; ?></td>
                                         <td>
                                             <span class="status-badge" 
                                                   style="background-color: <?= ($row['status'] === 'Aktif') ? '#28a745' : '#dc3545'; ?>;">
