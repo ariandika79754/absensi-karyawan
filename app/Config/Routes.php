@@ -27,8 +27,8 @@ $routes->group('auth', ['filter' => 'redirectIfAuthenticated'], function ($route
 $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     // $routes->group("Admin", ["filter" => "auth"], function ($routes) {
     $routes->get('dashboard', 'AdminDashboard::index', ['filter' => 'authenticate']);
-    $routes->get('logout', 'Auth::logout', ['filter' => null]); 
-    
+    $routes->get('logout', 'Auth::logout', ['filter' => null]);
+
     // Admin Profile
     $routes->get('profile', 'AdminProfil::index');
     $routes->post('users/update', 'AdminProfil::updatePelanggan');
@@ -58,8 +58,13 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('master/jam-kerja/update/(:any)', 'AdminJamkerja::update/$1'); // Proses update jam kerja
     $routes->get('master/jam-kerja/delete/(:any)', 'AdminJamkerja::deleteJamKerja/$1'); // Halaman delete jam kerja
 
-
-    
+    // Absensi
+    $routes->get('absensi', 'AdminAbsensi::index');
+    $routes->get('absensi/add', 'AdminAbsensi::add');
+    $routes->post('absensi/save', 'AdminAbsensi::save');
+    $routes->get('absensi/edit/(:any)', 'AdminAbsensi::edit/$1');
+    $routes->post('absensi/update/(:any)', 'AdminAbsensi::update/$1');
+    $routes->get('absensi/delete/(:any)', 'AdminAbsensi::deleteKaryawan/$1');
 });
 
 $routes->group('karyawan', ['filter' => 'authenticate'], function ($routes) {
@@ -70,9 +75,4 @@ $routes->group('karyawan', ['filter' => 'authenticate'], function ($routes) {
     // $routes->get('dashboard', 'PelangganDashboard::index');
     $routes->get('profil', 'KaryawanProfil::index');
     $routes->post('users/update', 'KaryawanProfil::updatePelanggan');
-
-   
-
- 
 });
-
