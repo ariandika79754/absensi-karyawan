@@ -39,13 +39,13 @@
     </li>
     <li class="menu-item <?= ($request->uri->getSegment(2) === 'karyawan') ? 'active  ' : '' ?>">
         <a href="/admin/karyawan" class="menu-link">
-            <i class="menu-icon tf-icons bx bxs-file"></i>
+        <i class="menu-icon tf-icons bx bx-user"></i>
             <div data-i18n="pps">Karyawan</div>
         </a>
     </li>
     <li class="menu-item <?= ($request->uri->getSegment(2) === 'absensi') ? 'active  ' : '' ?>">
         <a href="/admin/absensi" class="menu-link">
-            <i class="menu-icon tf-icons bx bxs-file"></i>
+        <i class="menu-icon tf-icons bx bx-calendar-check"></i>
             <div data-i18n="pps">Absensi Karyawan</div>
         </a>
     </li>
