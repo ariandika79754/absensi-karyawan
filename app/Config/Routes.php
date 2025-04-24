@@ -47,6 +47,8 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('master/users/add', 'AdminUsers::add');
     $routes->get('master/users/edit/(:any)', 'AdminUsers::edit/$1');
     $routes->post('master/users/update/(:any)', 'AdminUsers::update/$1');
+    $routes->get('master/users/delete/(:any)', 'AdminUsers::deleteUsers/$1');
+
 
     // Admin Jam Kerja
     $routes->get('master/jam-kerja', 'AdminJamkerja::index');
@@ -54,6 +56,8 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('master/jam-kerja/save', 'AdminJamkerja::save');
     $routes->get('master/jam-kerja/edit/(:any)', 'AdminJamkerja::edit/$1'); // Halaman edit jam kerja
     $routes->post('master/jam-kerja/update/(:any)', 'AdminJamkerja::update/$1'); // Proses update jam kerja
+    $routes->get('master/jam-kerja/delete/(:any)', 'AdminJamkerja::deleteJamKerja/$1'); // Halaman delete jam kerja
+
 
     
 });

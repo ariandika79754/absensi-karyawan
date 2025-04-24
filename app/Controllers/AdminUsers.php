@@ -156,6 +156,6 @@ class AdminUsers extends BaseController
     {
         $this->userModel->delete(decrypt_url($id));
         session()->setFlashdata('error', 'Berhasil menghapus data.'); // tambahkan ini
-        return redirect()->to('/admin/users');
+        return redirect()->to('/admin/master/users');
     }
 }
