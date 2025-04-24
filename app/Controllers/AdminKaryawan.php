@@ -154,13 +154,43 @@ class AdminKaryawan extends BaseController
             'foto'          => $namaFoto ?? $this->request->getPost('old_foto'),
         ]);
 
-        return redirect()->to('/admin/karyawan')->with('success', 'Data karyawan berhasil diperbarui.');
+        // Update juga di tabel users
+        $namaBaru = $this->request->getPost('nama');
+        $karyawan = $this->karyawanModel->find($id);
+
+        $userModel = new \App\Models\Admin\UsersModel();
+        $userModel->update($karyawan['user_id'], [
+            'nama' => $namaBaru
+        ]);
+
+        return redirect()->to('/admin/karyawan')->with('success', 'Data karyawan dan user berhasil diperbarui.');
     }
 
     public function deleteKaryawan($id)
     {
-        $this->karyawanModel->delete(decrypt_url($id));
-        session()->setFlashdata('error', 'Berhasil menghapus data.'); // tambahkan ini
+        $id = decrypt_url($id);
+        
+        // Ambil data karyawan terlebih dahulu untuk mendapatkan user_id dan foto
+        $karyawan = $this->karyawanModel->find($id);
+        if (!$karyawan) {
+            session()->setFlashdata('error', 'Data karyawan tidak ditemukan.');
+            return redirect()->to('/admin/karyawan');
+        }
+    
+        // Hapus foto dari folder jika ada
+        if ($karyawan['foto'] && file_exists('uploads/karyawan/' . $karyawan['foto'])) {
+            unlink('uploads/karyawan/' . $karyawan['foto']);
+        }
+    
+        // Hapus akun user yang terkait
+        $userModel = new \App\Models\Admin\UsersModel();
+        $userModel->delete($karyawan['user_id']);
+    
+        // Hapus data karyawan
+        $this->karyawanModel->delete($id);
+    
+        session()->setFlashdata('error', 'Berhasil menghapus data.');
         return redirect()->to('/admin/karyawan');
     }
+    
 }
