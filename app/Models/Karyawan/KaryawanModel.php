@@ -36,8 +36,8 @@ class KaryawanModel extends Model
         }
     }
     public function getKaryawanByUserId($userId)
-{
-    return $this->where('user_id', $userId)->first();
-}
-
+    {
+        return $this->where('user_id', $userId)->first();
+    }
+  
 }

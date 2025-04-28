@@ -88,5 +88,5 @@ $routes->group('karyawan', ['filter' => 'authenticate'], function ($routes) {
 
     // $routes->get('dashboard', 'PelangganDashboard::index');
     $routes->get('profil', 'KaryawanProfil::index');
-    $routes->post('users/update', 'KaryawanProfil::updatePelanggan');
+    $routes->post('users/update', 'KaryawanProfil::updateProfil');
 });

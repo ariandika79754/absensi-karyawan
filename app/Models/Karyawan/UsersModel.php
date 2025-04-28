@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Admin;
+namespace App\Models\Karyawan;
 
 use CodeIgniter\Model;
 
@@ -21,11 +21,11 @@ class UsersModel extends Model
     public function getAllPelanggan()
     {
         return  $this->db->table('users')
-        ->select('users.id, users.username, users.nama, role.role as role')
-        ->join('role', 'users.role_id = role.id')
-        ->where('users.role_id', 2) // Filter di sini hanya mengambil role_id = 2
-        ->get()
-        ->getResultArray();
+            ->select('users.id, users.username, users.nama, role.role as role')
+            ->join('role', 'users.role_id = role.id')
+            ->where('users.role_id', 2) // Filter di sini hanya mengambil role_id = 2
+            ->get()
+            ->getResultArray();
     }
 
     public function updateData($id, $data)
@@ -45,10 +45,10 @@ class UsersModel extends Model
 
         return $this->where("id", $id)->get()->getRow();
     }
-    public function updateDataPelanggan($id, $data)
-{
-    return $this->where('id', $id)->set($data)->update();
-}
+    // public function updateDataPelanggan($id, $data)
+    // {
+    //     return $this->where('id', $id)->set($data)->update();
+    // }
 
     
 }
