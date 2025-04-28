@@ -65,6 +65,11 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('absensi/edit/(:any)', 'AdminAbsensi::edit/$1');
     $routes->post('absensi/update/(:any)', 'AdminAbsensi::update/$1');
     $routes->get('absensi/delete/(:any)', 'AdminAbsensi::deleteKaryawan/$1');
+
+    $routes->get('absensi/rekapan', 'AdminAbsensi::rekapan');
+    $routes->get('absensi/exportPdf', 'AdminAbsensi::exportPdf');
+
+
 });
 
 $routes->group('karyawan', ['filter' => 'authenticate'], function ($routes) {
@@ -88,5 +93,5 @@ $routes->group('karyawan', ['filter' => 'authenticate'], function ($routes) {
 
     // $routes->get('dashboard', 'PelangganDashboard::index');
     $routes->get('profil', 'KaryawanProfil::index');
-    $routes->post('users/update', 'KaryawanProfil::updateProfil');
+    $routes->post('users/update', 'KaryawanProfil::update');
 });

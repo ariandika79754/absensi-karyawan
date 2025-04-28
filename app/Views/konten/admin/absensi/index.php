@@ -29,7 +29,10 @@
                     <h5 class="card-header">Rekap Absensi Karyawan</h5>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="/admin/absensi/add" class="btn btn-primary me-3 mt-3">
+                    <a href="/admin/absensi/rekapan" class="btn btn-warning me-3 mt-3">
+                        <i class='bx bx-calendar'></i> Rekapan Bulanan
+                    </a>
+                    <a href="/admin/absensi/add" class="btn btn-primary me-2 mt-3">
                         <i class='bx bxs-message-alt-add'></i> Tambah
                     </a>
                 </div>
@@ -50,7 +53,8 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php $i = 1; foreach ($absensi as $row): ?>
+                                <?php $i = 1;
+                                foreach ($absensi as $row): ?>
                                     <tr>
                                         <td><?= $i++; ?></td>
                                         <td><?= $row['nama']; ?></td>

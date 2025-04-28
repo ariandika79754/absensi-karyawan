@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\Admin\AbsensiModel;
 use App\Models\Admin\UsersModel;
 use App\Models\Admin\SesiModel;
+use Dompdf\Dompdf;
 
 class AdminAbsensi extends BaseController
 {
@@ -116,7 +117,7 @@ class AdminAbsensi extends BaseController
         return redirect()->to('/admin/absensi')->with('success', 'Data absensi berhasil diupdate.');
     }
 
-  
+
 
 
     // Delete
@@ -126,5 +127,85 @@ class AdminAbsensi extends BaseController
         $this->absensiModel->delete(decrypt_url($id));
         session()->setFlashdata('error', 'Berhasil menghapus data.'); // tambahkan ini
         return redirect()->to('/admin/master/jam-kerja');
+    }
+    public function rekapan()
+    {
+        $bulan = $this->request->getGet('bulan') ?? date('n');
+        $tahun = $this->request->getGet('tahun') ?? date('Y');
+        $users_id = $this->request->getGet('users_id');
+
+        $builder = $this->absensiModel
+            ->select('absensi.*, users.nama as nama_karyawan, sesi.sesi as sesi')
+            ->join('users', 'users.id = absensi.users_id')
+            ->join('sesi', 'sesi.id = absensi.sesi_id')
+            ->where('MONTH(absensi.tanggal)', $bulan)
+            ->where('YEAR(absensi.tanggal)', $tahun);
+
+        if (!empty($users_id)) {
+            $builder->where('users.id', $users_id);
+        }
+
+        $rekapan = $builder->orderBy('tanggal', 'ASC')->findAll();
+
+        $data = [
+            'rekapan' => $rekapan,
+            'bulan' => $bulan,
+            'tahun' => $tahun,
+            'users_id' => $users_id,
+            'karyawan' => $this->usersModel->where('role_id', 2)->findAll(), // ambil semua karyawan
+        ];
+
+        return view('konten/admin/absensi/rekapan', $data);
+    }
+    // Tambahkan di atas file jika belum
+
+    public function exportPdf()
+    {
+        $bulan = $this->request->getGet('bulan') ?? date('n');
+        $tahun = $this->request->getGet('tahun') ?? date('Y');
+        $users_id = $this->request->getGet('users_id');
+
+        // Mengambil data absensi
+        $builder = $this->absensiModel
+            ->select('absensi.*, users.nama as nama_karyawan, sesi.sesi as sesi')
+            ->join('users', 'users.id = absensi.users_id')
+            ->join('sesi', 'sesi.id = absensi.sesi_id')
+            ->where('MONTH(absensi.tanggal)', $bulan)
+            ->where('YEAR(absensi.tanggal)', $tahun);
+
+        if (!empty($users_id)) {
+            $builder->where('users.id', $users_id);
+        }
+
+        $rekapan = $builder->orderBy('tanggal', 'ASC')->findAll();
+
+        // Menghitung jumlah status (Hadir, Sakit, Alfa, dll)
+        $statusCount = [
+            'Hadir' => 0,
+            'Sakit' => 0,
+            'Alfa' => 0,
+            // Tambahkan status lain jika ada
+        ];
+
+        foreach ($rekapan as $row) {
+            if (isset($statusCount[$row['status']])) {
+                $statusCount[$row['status']]++;
+            }
+        }
+
+        // Load view untuk PDF dan kirimkan data ke view
+        $html = view('konten/admin/absensi/pdf_rekapan', [
+            'rekapan' => $rekapan,
+            'bulan' => $bulan,
+            'tahun' => $tahun,
+            'statusCount' => $statusCount,  // Mengirimkan data jumlah status
+        ]);
+
+        // Inisialisasi Dompdf
+        $dompdf = new Dompdf();
+        $dompdf->loadHtml($html);
+        $dompdf->setPaper('A4', 'landscape');
+        $dompdf->render();
+        $dompdf->stream('Rekapan_Absensi_' . date('F_Y') . '.pdf', ['Attachment' => true]);
     }
 }

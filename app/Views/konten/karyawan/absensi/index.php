@@ -26,7 +26,7 @@
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h5 class="mb-0">Rekap Absensi Karyawan</h5>
                 <div class="d-flex gap-2">
-                    <a href="/karyawan/absensi/rekap-bulanan" class="btn btn-outline-secondary">
+                    <a href="/karyawan/absensi/rekap-bulanan" class="btn btn-warning">
                         <i class='bx bx-calendar'></i> Rekap Bulanan
                     </a>
                     <a href="/karyawan/absensi/add" class="btn btn-primary">
