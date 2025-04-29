@@ -33,7 +33,7 @@ class Auth extends BaseController
         } else {
             // Jika tidak ada session 'logged_id', tampilkan halaman login
             $data = [
-                "title" => "Halaman Login - Aplikasi Ari Andika",
+                "title" => "Halaman Login - Aplikasi E-RadarTV",
                 'errors' => session('errors'), // Tambahkan validation ke data
             ];
             return view('auth/indexx', $data);
@@ -82,7 +82,7 @@ class Auth extends BaseController
                 session()->set('user_name', $user['username']);
                 return redirect()->to('/auth/update-password');
             }
-            // session()->setFlashdata('primary', 'Hello.... Selamat Datang');
+            session()->setFlashdata('primary', 'Hello... Selamat Datang');
 
             switch ($user['role']) {
                 case 'Admin':

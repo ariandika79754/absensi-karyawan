@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title><?= (!empty($title) ? $title : 'Aplikasi Ari Andika') ?></title>
+    <title><?= (!empty($title) ? $title : 'Aplikasi E-RadarTV') ?></title>
 
     <meta name="description" content="" />
     <!-- Tambahkan di bagian head -->
@@ -113,7 +113,7 @@
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- Place this tag where you want the button to render. -->
 
-                            <a href="/<?= strtolower(session()->get('role')); ?>/profile" data-icon="octicon-star" data-size="large" data-show-count="true">
+                            <a href="/<?= strtolower(session()->get('role')); ?>/profil" data-icon="octicon-star" data-size="large" data-show-count="true">
                                 <?= session()->get('data')['username']; ?>
                             </a>
                             &nbsp;
@@ -123,7 +123,7 @@
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
 
-                                        <img src="/template/assets/img/logo/default.png" alt class="w-px-40 h-5 rounded-circle" />
+                                        <img src="/template/assets/img/logo/defaultt.png" alt class="w-px-40 h-5 rounded-circle" />
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
@@ -132,7 +132,7 @@
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="/template/assets/img/logo/default.png" alt class="w-px-40 h-5 rounded-circle" />
+                                                        <img src="/template/assets/img/logo/defaultt.png" alt class="w-px-40 h-5 rounded-circle" />
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">

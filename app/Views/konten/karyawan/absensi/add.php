@@ -74,9 +74,9 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 mt-5">
-                            <button class="btn btn-primary"><i class='bx bx-save'></i> Simpan</button>
-                        </div>
+                        <button class="btn btn-primary">
+                            <i class='bx bx-save me-1'></i> Simpan
+                        </button>
                     </form>
                 </div>
             </div>

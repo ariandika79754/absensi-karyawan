@@ -4,6 +4,11 @@
 <h4 class="py-3 mb-4"><span class="fw-light">Profil Karyawan</span></h4>
 <div class="row justify-content-center">
 
+    <?php if (empty($users['username']) || empty($karyawan['nama']) || empty($karyawan['no_hp']) || empty($karyawan['jenis_kelamin']) || empty($karyawan['alamat'])): ?>
+        <div class="alert alert-warning mt-3" role="alert">
+            ⚠️ Lengkapi profil Anda terlebih dahulu.
+        </div>
+    <?php endif; ?>
     <form action="/karyawan/users/update" method="POST" enctype="multipart/form-data">
         <div class="card mb-4">
             <h5 class="card-header">Detail Karyawan</h5>
@@ -75,6 +80,8 @@
         <div class="mt-2">
             <button type="submit" class="btn btn-primary me-2">Simpan Perubahan</button>
         </div>
+
+
     </form>
 
     <script>

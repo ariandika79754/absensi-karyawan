@@ -23,6 +23,12 @@
                                 <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
                                 <p class="text-center small">Enter your username & password to login</p>
                             </div>
+                            <?php if (session()->getFlashdata('error')) : ?>
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    <?= session()->getFlashdata('error') ?>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            <?php endif; ?>
 
                             <form class="mb-3" action="/auth/check-auth" method="POST">
                                 <div class="mb-3">

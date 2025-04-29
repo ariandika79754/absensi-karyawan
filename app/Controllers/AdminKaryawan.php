@@ -31,20 +31,20 @@ class AdminKaryawan extends BaseController
     }
     public function save()
     {
-        $validation = $this->validate([
-            'nama'          => 'required',
-            'tanggal_lahir' => 'required|valid_date',
-            'jabatan'       => 'required',
-            'alamat'        => 'required',
-            'no_hp'         => 'required',
-            'jenis_kelamin' => 'required',
-            'status'        => 'required',
-            'foto'          => 'uploaded[foto]|max_size[foto,4096]|is_image[foto]|mime_in[foto,image/png,image/jpg,image/jpeg]',
-        ]);
+        // $validation = $this->validate([
+        //     'nama'          => 'required',
+        //     'tanggal_lahir' => 'required|valid_date',
+        //     'jabatan'       => 'required',
+        //     'alamat'        => 'required',
+        //     'no_hp'         => 'required',
+        //     'jenis_kelamin' => 'required',
+        //     'status'        => 'required',
+        //     'foto'          => 'uploaded[foto]|max_size[foto,4096]|is_image[foto]|mime_in[foto,image/png,image/jpg,image/jpeg]',
+        // ]);
 
-        if (!$validation) {
-            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
-        }
+        // if (!$validation) {
+        //     return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        // }
 
         // Handle uploaded file
         $fileFoto = $this->request->getFile('foto');

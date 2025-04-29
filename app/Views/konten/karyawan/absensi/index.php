@@ -63,13 +63,13 @@
                                     <td><?= $row['status']; ?></td>
                                     <td><?= $row['keterangan']; ?></td>
                                     <td>
-                                        <a href="/karyawan/absensi/edit/<?= encrypt_url($row['id']); ?>" class="btn btn-sm btn-success">
-                                            <i class='bx bx-edit-alt'></i>
-                                        </a>
-                                        <a href="#" onclick="confirmDeleteAbsensi('<?= encrypt_url($row['id']); ?>')" class="btn btn-sm btn-danger">
-                                            <i class='bx bx-trash'></i>
-                                        </a>
+                                        <?php if ($row['tanggal'] == date('Y-m-d')): ?>
+                                            <a href="/karyawan/absensi/edit/<?= encrypt_url($row['id']); ?>" class="btn btn-sm btn-success">
+                                                <i class='bx bx-edit-alt'></i>
+                                            </a>
+                                        <?php endif; ?>
                                     </td>
+
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

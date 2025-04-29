@@ -8,7 +8,7 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="text-warning">Tambah User Baru</h4>
-                
+
                 <!-- Flash Messages -->
                 <?php if (session()->getFlashdata('errors')) : ?>
                     <div class="alert alert-danger">
@@ -49,7 +49,9 @@
                     </div>
 
                     <div class="col-lg-6 mt-5">
-                        <button class="btn btn-primary">Simpan</button>
+                        <button class="btn btn-primary">
+                            <i class='bx bx-save me-1'></i> Simpan
+                        </button>
                         <a href="/admin/master/users" class="btn btn-dark">Kembali</a>
                     </div>
                 </form>

@@ -38,15 +38,15 @@
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="alamat" class="form-label">Alamat</label>
-                                <input type="text" class="form-control" id="alamat" name="alamat" required>
+                                <input type="text" class="form-control" id="alamat" name="alamat">
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="no_hp" class="form-label">Nomor Handphone</label>
-                                <input type="text" class="form-control" id="no_hp" name="no_hp" required>
+                                <input type="text" class="form-control" id="no_hp" name="no_hp">
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
-                                <select class="form-select" id="jenis_kelamin" name="jenis_kelamin" required>
+                                <select class="form-select" id="jenis_kelamin" name="jenis_kelamin">
                                     <option value="">Pilih Jenis Kelamin</option>
                                     <option value="Laki-laki">Laki-laki</option>
                                     <option value="Perempuan">Perempuan</option>
@@ -62,14 +62,17 @@
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="foto" class="form-label">Foto</label>
-                                <input type="file" class="form-control" id="foto" name="foto" required onchange="previewImage(event)">
+                                <input type="file" class="form-control" id="foto" name="foto" onchange="previewImage(event)">
                                 <img id="preview" src="#" alt="Preview Foto" class="img-thumbnail mt-3" style="display: none; max-width: 100px;">
                             </div>
                         </div>
 
                         <div class="col-lg-6 mt-5">
-                            <button class="btn btn-primary">Simpan</button>
+                            <button class="btn btn-primary">
+                                <i class='bx bx-save me-1'></i> Simpan
+                            </button>
                         </div>
+
                     </form>
                 </div>
             </div>
