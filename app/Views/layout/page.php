@@ -313,7 +313,7 @@
                 gravity: "top",
                 position: 'right',
                 style: {
-                    background: '#6495ED'
+                    background: '#7B68EE'
                 }
             }).showToast();
 
