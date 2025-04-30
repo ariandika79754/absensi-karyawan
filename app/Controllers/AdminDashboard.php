@@ -2,17 +2,24 @@
 
 namespace App\Controllers;
 
+use App\Models\Admin\AbsensiModel;
+use App\Models\Admin\UsersModel;
+
 class AdminDashboard extends BaseController
 {
     public function index()
     {
-        $absensiModel = new \App\Models\Admin\AbsensiModel();
+        $absensiModel = new AbsensiModel();
+        $usersModel = new UsersModel();
 
-        // Statistik kehadiran semua user
+        // Statistik kehadiran
         $data['hadir'] = $absensiModel->where('status', 'Hadir')->countAllResults();
         $data['izin'] = $absensiModel->where('status', 'Izin')->countAllResults();
         $data['alpha'] = $absensiModel->where('status', 'Alpha')->countAllResults();
         $data['sakit'] = $absensiModel->where('status', 'sakit')->countAllResults();
+
+        // Jumlah karyawan dari tabel users
+        $data['jumlah_karyawan'] = $usersModel->countAllResults();
 
         // Grafik kehadiran 7 hari terakhir
         $today = date('Y-m-d');
@@ -44,7 +51,7 @@ class AdminDashboard extends BaseController
             'hadir' => array_values($grafikJumlah)
         ];
 
-        // Ambil semua data absensi 1 bulan terakhir
+        // Riwayat absensi 1 bulan terakhir
         $builder = $absensiModel->builder();
         $builder->select('absensi.*, users.nama');
         $builder->join('users', 'users.id = absensi.users_id');

@@ -6,8 +6,18 @@
     <p>Selamat datang, Admin</p>
 
     <div class="row mb-4">
+        <!-- Card Jumlah Karyawan -->
+        <div class="col-md-4">
+            <div class="card mb-3 shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Jumlah Karyawan</h5>
+                    <p class="card-text display-6"><?= $jumlah_karyawan ?></p>
+                </div>
+            </div>
+        </div>
+
         <!-- Grafik Mingguan di Tengah -->
-        <div class="col-md-8 offset-md-2">
+        <div class="col-md-8">
             <div class="card mb-3">
                 <div class="card-body">
                     <h5 class="card-title">Grafik Kehadiran 7 Hari Terakhir</h5>
@@ -16,7 +26,7 @@
             </div>
         </div>
 
-        <!-- Tabel Riwayat Lebar Penuh -->
+        <!-- Tabel Riwayat -->
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body" style="max-height: 300px; overflow-y: auto;">
@@ -60,10 +70,11 @@
             datasets: [{
                 label: 'Jumlah Hadir',
                 data: <?= json_encode($grafik['hadir']) ?>,
-                backgroundColor: 'rgba(75, 192, 192, 0.7)',
-                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: 'rgba(13, 110, 253, 0.7)',
+                borderColor: 'rgba(13, 110, 253, 1)',
                 borderWidth: 1
             }]
+
         },
         options: {
             responsive: true,
