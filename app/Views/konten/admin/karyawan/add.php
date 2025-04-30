@@ -54,12 +54,12 @@
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="status" class="form-label">Status</label>
-                                <select class="form-select" id="status" name="status" required>
-                                    <option value="">Pilih Status</option>
-                                    <option value="Aktif">Aktif</option>
-                                    <option value="Non-Aktif">Non-Aktif</option>
+                                <select class="form-select" id="status" name="status" readonly disabled>
+                                    <option value="Aktif" selected>Aktif</option>
                                 </select>
+                                <input type="hidden" name="status" value="Aktif">
                             </div>
+
                             <div class="col-lg-6 mb-3">
                                 <label for="foto" class="form-label">Foto</label>
                                 <input type="file" class="form-control" id="foto" name="foto" onchange="previewImage(event)">

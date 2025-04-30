@@ -18,7 +18,7 @@
                         <?php if (!empty($karyawan['foto'])): ?>
                             <img src="/uploads/karyawan/<?= $karyawan['foto'] ?>" alt="Foto Profil" class="img-thumbnail rounded-circle" style="width: 220px; height: 220px; object-fit: cover;">
                         <?php else: ?>
-                            <img src="/uploads/karyawan/default.png" alt="Foto Profil Default" class="img-thumbnail rounded-circle" style="width: 220px; height: 220px; object-fit: cover;">
+                            <img src="/uploads/karyawan/defaultt.png" alt="Foto Profil Default" class="img-thumbnail rounded-circle" style="width: 220px; height: 220px; object-fit: cover;">
                         <?php endif; ?>
 
                         <div class="mt-3">
