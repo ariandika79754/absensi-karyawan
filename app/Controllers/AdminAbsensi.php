@@ -126,7 +126,7 @@ class AdminAbsensi extends BaseController
     {
         $this->absensiModel->delete(decrypt_url($id));
         session()->setFlashdata('error', 'Berhasil menghapus data.'); // tambahkan ini
-        return redirect()->to('/admin/master/jam-kerja');
+        return redirect()->to('/admin/absensi');
     }
     public function rekapan()
     {

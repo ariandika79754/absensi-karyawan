@@ -63,6 +63,19 @@ class KaryawanAbsensi extends BaseController
     // Simpan Data Absensi
     public function save()
     {
+        $userId = $this->request->getPost('users_id');
+        $tanggal = $this->request->getPost('tanggal');
+
+        // Cek apakah data absensi sudah ada untuk user dan tanggal tersebut
+        $existingAbsensi = $this->absensiModel
+            ->where('users_id', $userId)
+            ->where('tanggal', $tanggal)
+            ->first();
+
+        if ($existingAbsensi) {
+            return redirect()->back()->withInput()->with('error', 'Anda sudah mengisi absensi untuk hari ini.');
+        }
+
         $validation = $this->validate([
             'users_id'   => 'required|numeric',
             'tanggal'    => 'required|valid_date',
@@ -77,8 +90,8 @@ class KaryawanAbsensi extends BaseController
         }
 
         $this->absensiModel->save([
-            'users_id'   => $this->request->getPost('users_id'),
-            'tanggal'    => $this->request->getPost('tanggal'),
+            'users_id'   => $userId,
+            'tanggal'    => $tanggal,
             'sesi_id'    => $this->request->getPost('sesi_id'),
             'jam_masuk'  => $this->request->getPost('jam_masuk'),
             'jam_keluar' => $this->request->getPost('jam_keluar'),
@@ -88,6 +101,7 @@ class KaryawanAbsensi extends BaseController
 
         return redirect()->to('/karyawan/absensi')->with('success', 'Data absensi berhasil disimpan.');
     }
+
 
     // Tampilkan Form Edit Absensi
     public function edit($id)

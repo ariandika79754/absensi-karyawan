@@ -10,7 +10,7 @@
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <div class="card text-white bg-success" style="height: 120px;">
+                    <div class="card text-black bg-success" style="height: 120px;">
                         <div class="card-body">
                             <h5>Hadir</h5>
                             <p class="fs-4 mb-0 mt-2 text-center"><?= $hadir ?></p>
@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <div class="card text-white bg-warning" style="height: 120px;">
+                    <div class="card text-black" style="height: 120px; background: #FFFF00;">
                         <div class="card-body">
                             <h5>Sakit</h5>
                             <p class="fs-4 mb-0 mt-2 text-center"><?= $sakit ?></p>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <div class="card text-white bg-info" style="height: 120px;">
+                    <div class="card text-black bg-info" style="height: 120px;">
                         <div class="card-body">
                             <h5>Izin</h5>
                             <p class="fs-4 mb-0 mt-2 text-center"><?= $izin ?></p>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <div class="card text-white bg-danger" style="height: 120px;">
+                    <div class="card text-black" style="height: 120px; background: #FF0000">
                         <div class="card-body">
                             <h5>Alpha</h5>
                             <p class="fs-4 mb-0 mt-2 text-center"><?= $alpha ?></p>

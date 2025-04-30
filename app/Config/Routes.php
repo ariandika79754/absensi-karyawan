@@ -64,7 +64,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('absensi/save', 'AdminAbsensi::save');
     $routes->get('absensi/edit/(:any)', 'AdminAbsensi::edit/$1');
     $routes->post('absensi/update/(:any)', 'AdminAbsensi::update/$1');
-    $routes->get('absensi/delete/(:any)', 'AdminAbsensi::deleteKaryawan/$1');
+    $routes->get('absensi/delete/(:any)', 'AdminAbsensi::deleteAbsensi/$1');
 
     $routes->get('absensi/rekapan', 'AdminAbsensi::rekapan');
     $routes->get('absensi/exportPdf', 'AdminAbsensi::exportPdf');

@@ -10,11 +10,11 @@
                     <h5 class="card-header">Edit Data Absensi</h5>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="/admin/absensi" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
+                    <a href="/karyawan/absensi" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
                     <!-- Form untuk mengedit data absensi -->
-                    <form action="/admin/absensi/update/<?= encrypt_url($absensi['id']) ?>" method="POST">
+                    <form action="/karyawan/absensi/update/<?= encrypt_url($absensi['id']) ?>" method="POST">
                         <?= csrf_field() ?>
                         <div class="row">
                             <div class="col-lg-6 mb-3">
@@ -34,10 +34,16 @@
 
                             <div class="col-lg-6 mb-3">
                                 <label for="sesi_id" class="form-label">Sesi</label>
-                                <select class="form-control" id="sesi_id" name="sesi_id" required>
+                                <select name="sesi_id" id="sesi_id" class="form-control" required>
                                     <option value="">Pilih Sesi</option>
-                                    <?php foreach ($sesi as $s): ?>
-                                        <option value="<?= $s['id'] ?>" <?= $s['id'] == $absensi['sesi_id'] ? 'selected' : '' ?>><?= $s['sesi'] ?></option>
+                                    <?php foreach ($sesi as $row): ?>
+                                        <option
+                                            value="<?= $row['id'] ?>"
+                                            data-jam-masuk="<?= $row['jam_masuk'] ?>"
+                                            data-jam-keluar="<?= $row['jam_keluar'] ?>"
+                                            <?= $row['id'] == $absensi['sesi_id'] ? 'selected' : '' ?>>
+                                            <?= $row['sesi'] ?>
+                                        </option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
@@ -78,5 +84,16 @@
         </div>
     </div>
 </div>
+<!-- JavaScript untuk mengisi otomatis jam masuk dan keluar -->
+<script>
+    document.getElementById('sesi_id').addEventListener('change', function() {
+        const selectedOption = this.options[this.selectedIndex];
+        const jamMasuk = selectedOption.getAttribute('data-jam-masuk');
+        const jamKeluar = selectedOption.getAttribute('data-jam-keluar');
+
+        document.getElementById('jam_masuk').value = jamMasuk || '';
+        document.getElementById('jam_keluar').value = jamKeluar || '';
+    });
+</script>
 
 <?= $this->endSection() ?>
