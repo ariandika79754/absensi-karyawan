@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <!-- Kolom kanan: Grafik dan Tabel -->
+        <!-- Kolom kanan: Grafik -->
         <div class="col-md-6">
             <div class="card mb-3">
                 <div class="card-body">
@@ -52,6 +52,10 @@
                     <canvas id="absensiChart"></canvas>
                 </div>
             </div>
+        </div>
+
+        <!-- Tabel Riwayat: Full width -->
+        <div class="col-lg-12">
             <div class="card">
                 <div class="card-body" style="max-height: 300px; overflow-y: auto;">
                     <h5 class="card-title">Riwayat Absensi 1 Bulan Terakhir</h5>
@@ -80,6 +84,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
 
