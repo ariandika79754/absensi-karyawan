@@ -65,14 +65,15 @@
                                     <option value="Hadir" <?= $absensi['status'] == 'Hadir' ? 'selected' : '' ?>>Hadir</option>
                                     <option value="Izin" <?= $absensi['status'] == 'Izin' ? 'selected' : '' ?>>Izin</option>
                                     <option value="Sakit" <?= $absensi['status'] == 'Sakit' ? 'selected' : '' ?>>Sakit</option>
-                                    <option value="Alfa" <?= $absensi['status'] == 'Alfa' ? 'selected' : '' ?>>Alfa</option>
+                                    <option value="Terlambat" <?= $absensi['status'] == 'Terlambat' ? 'selected' : '' ?>>Terlambat</option>
                                 </select>
                             </div>
 
-                            <div class="col-lg-12 mb-3">
+                            <div class="col-lg-12 mb-3" id="keterangan_div">
                                 <label class="form-label" for="keterangan">Keterangan</label>
                                 <textarea class="form-control" id="keterangan" name="keterangan" rows="3"><?= $absensi['keterangan'] ?></textarea>
                             </div>
+
                         </div>
 
                         <div class="col-lg-6 mt-5">
@@ -93,6 +94,27 @@
 
         document.getElementById('jam_masuk').value = jamMasuk || '';
         document.getElementById('jam_keluar').value = jamKeluar || '';
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const statusSelect = document.getElementById('status');
+        const keteranganDiv = document.getElementById('keterangan_div');
+
+        // Fungsi untuk mengatur apakah kolom keterangan akan terlihat
+        function toggleKeteranganField() {
+            if (statusSelect.value === 'Hadir') {
+                keteranganDiv.style.display = 'none'; // Sembunyikan keterangan jika status Hadir
+            } else {
+                keteranganDiv.style.display = 'block'; // Tampilkan keterangan jika status selain Hadir
+            }
+        }
+
+        // Inisialisasi status saat halaman pertama kali dimuat
+        toggleKeteranganField();
+
+        // Menambahkan event listener untuk perubahan status
+        statusSelect.addEventListener('change', toggleKeteranganField);
     });
 </script>
 

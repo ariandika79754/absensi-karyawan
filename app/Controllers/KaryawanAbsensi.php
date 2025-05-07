@@ -58,15 +58,57 @@ class KaryawanAbsensi extends BaseController
             return redirect()->to('/login');
         }
     }
-
-
-    // Simpan Data Absensi
     public function save()
     {
-        $userId = $this->request->getPost('users_id');
-        $tanggal = $this->request->getPost('tanggal');
+        $userId   = $this->request->getPost('users_id');
+        $tanggal  = $this->request->getPost('tanggal');
+        $status   = $this->request->getPost('status');
+        $latUser  = (float) $this->request->getPost('latitude');
+        $longUser = (float) $this->request->getPost('longitude');
 
-        // Cek apakah data absensi sudah ada untuk user dan tanggal tersebut
+        // Koordinat kantor RadarTV
+        $latKantor  = -5.378535; // hanya beda 0.0000001 dari kantor
+        $longKantor = 105.2605675;
+
+
+        // Koordinat rumah ari 
+        // $latKantor  = -5.3785759;
+        // $longKantor = 105.2607963;
+        //    dd([
+        //     'latUser' => $latUser,
+        //     'longUser' => $longUser,
+        //     'latKantor' => $latKantor,
+        //     'longKantor' => $longKantor,
+        // ]);
+
+        // Koordinat rumah ari 
+        // $latKantor  = -5.3785759;
+        // $longKantor = 105.2607963;
+
+        // Fungsi hitung jarak menggunakan Haversine Formula
+        function hitungJarak($lat1, $lon1, $lat2, $lon2)
+        {
+            $earthRadius = 6371e3; // meter
+            $dLat = deg2rad($lat2 - $lat1);
+            $dLon = deg2rad($lon2 - $lon1);
+
+            $a = sin($dLat / 2) * sin($dLat / 2) +
+                cos(deg2rad($lat1)) * cos(deg2rad($lat2)) *
+                sin($dLon / 2) * sin($dLon / 2);
+            $c = 2 * atan2(sqrt($a), sqrt(1 - $a));
+
+            return $earthRadius * $c; // hasil dalam meter
+        }
+
+        $jarak = hitungJarak($latUser, $longUser, $latKantor, $longKantor);
+        // dd($jarak);
+        // Jika lebih dari 100 meter dan status bukan sakit
+        if ($jarak > 1000 && $status !== 'Sakit') {
+            session()->setFlashdata('lokasi_error', 'Absensi hanya bisa dilakukan di area kantor, kecuali jika status sakit.');
+            return redirect()->to('/karyawan/absensi/add');
+        }
+
+        // Cek duplikat absensi
         $existingAbsensi = $this->absensiModel
             ->where('users_id', $userId)
             ->where('tanggal', $tanggal)
@@ -76,18 +118,24 @@ class KaryawanAbsensi extends BaseController
             return redirect()->back()->withInput()->with('error', 'Anda sudah mengisi absensi untuk hari ini.');
         }
 
+        // Validasi data
         $validation = $this->validate([
             'users_id'   => 'required|numeric',
             'tanggal'    => 'required|valid_date',
             'sesi_id'    => 'required|numeric',
             'jam_masuk'  => 'required',
             'jam_keluar' => 'required',
-            'status'     => 'required|in_list[Hadir,Izin,Sakit,Alfa]',
+            'status'     => 'required|in_list[Hadir,Izin,Sakit,Telat]',
         ]);
 
         if (!$validation) {
-            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+            // Menyimpan error ke session agar dapat ditampilkan kembali
+            session()->setFlashdata('errors', $this->validator->getErrors());
+            return redirect()->to('/karyawan/absensi/add');
         }
+
+        // Mengatur keterangan jika statusnya "Hadir"
+        $keterangan = ($status === 'Hadir') ? null : $this->request->getPost('keterangan');
 
         $this->absensiModel->save([
             'users_id'   => $userId,
@@ -95,8 +143,8 @@ class KaryawanAbsensi extends BaseController
             'sesi_id'    => $this->request->getPost('sesi_id'),
             'jam_masuk'  => $this->request->getPost('jam_masuk'),
             'jam_keluar' => $this->request->getPost('jam_keluar'),
-            'status'     => $this->request->getPost('status'),
-            'keterangan' => $this->request->getPost('keterangan'),
+            'status'     => $status,
+            'keterangan' => $keterangan,
         ]);
 
         return redirect()->to('/karyawan/absensi')->with('success', 'Data absensi berhasil disimpan.');
@@ -127,31 +175,68 @@ class KaryawanAbsensi extends BaseController
     {
         $decodedId = decrypt_url($id);
 
+        $userId    = $this->request->getPost('users_id');
+        $tanggal   = $this->request->getPost('tanggal');
+        $status    = $this->request->getPost('status');
+        $latUser   = (float) $this->request->getPost('latitude');
+        $longUser  = (float) $this->request->getPost('longitude');
+
+        $latKantor  = -5.3722827; // hanya beda 0.0000001 dari kantor
+        $longKantor = 105.2633784;
+
+        // Hitung jarak antara lokasi pengguna dan kantor
+        function hitungJaraklokasi($lat1, $lon1, $lat2, $lon2)
+        {
+            $earthRadius = 6371e3;
+            $dLat = deg2rad($lat2 - $lat1);
+            $dLon = deg2rad($lon2 - $lon1);
+            $a = sin($dLat / 2) * sin($dLat / 2) +
+                cos(deg2rad($lat1)) * cos(deg2rad($lat2)) *
+                sin($dLon / 2) * sin($dLon / 2);
+            $c = 2 * atan2(sqrt($a), sqrt(1 - $a));
+            return $earthRadius * $c;
+        }
+
+        $jarak = hitungJaraklokasi($latUser, $longUser, $latKantor, $longKantor);
+
+        // Cek jika status Hadir tapi di luar lokasi
+        if ($jarak > 1000 && $status === 'Hadir') {
+            return redirect()->back()->withInput()->with('lokasi_error', 'Update absensi dengan status Hadir hanya dapat dilakukan di area kantor.');
+        }
+
+        // Validasi form
         $validation = $this->validate([
             'users_id'   => 'required|numeric',
             'tanggal'    => 'required|valid_date',
             'sesi_id'    => 'required|numeric',
             'jam_masuk'  => 'required',
             'jam_keluar' => 'required',
-            'status'     => 'required|in_list[Hadir,Izin,Sakit,Alfa]',
+            'status'     => 'required|in_list[Hadir,Izin,Sakit]', // only 'Hadir', 'Izin', 'Sakit'
         ]);
 
         if (!$validation) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
+        // If status is 'Hadir', do not require or set 'keterangan'
+        // If status is 'Hadir', do not require or set 'keterangan'
+        $keterangan = ($status === 'Hadir') ? null : $this->request->getPost('keterangan');
+
+
+        // Update data absensi
         $this->absensiModel->update($decodedId, [
-            'users_id'   => $this->request->getPost('users_id'),
-            'tanggal'    => $this->request->getPost('tanggal'),
+            'users_id'   => $userId,
+            'tanggal'    => $tanggal,
             'sesi_id'    => $this->request->getPost('sesi_id'),
             'jam_masuk'  => $this->request->getPost('jam_masuk'),
             'jam_keluar' => $this->request->getPost('jam_keluar'),
-            'status'     => $this->request->getPost('status'),
-            'keterangan' => $this->request->getPost('keterangan'),
+            'status'     => $status,
+            'keterangan' => $keterangan,
         ]);
 
         return redirect()->to('/karyawan/absensi')->with('success', 'Data absensi berhasil diupdate.');
     }
+
 
     // Delete
 
