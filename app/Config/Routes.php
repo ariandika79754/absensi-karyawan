@@ -44,12 +44,17 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     // Admin Users
     $routes->get('master/users', 'AdminUsers::index');
     $routes->get('master/users/add', 'AdminUsers::add');
-    $routes->get('master/users/add', 'AdminUsers::add');
     $routes->get('master/users/edit/(:any)', 'AdminUsers::edit/$1');
     $routes->post('master/users/update/(:any)', 'AdminUsers::update/$1');
     $routes->get('master/users/delete/(:any)', 'AdminUsers::deleteUsers/$1');
 
-
+    // Admin Jabatan
+    $routes->get('master/jabatan', 'AdminJabatan::index');
+    $routes->get('master/jabatan/add', 'AdminJabatan::add');
+    $routes->post('master/jabatan/save', 'AdminJabatan::save');
+    $routes->get('master/jabatan/edit/(:any)', 'AdminJabatan::edit/$1');
+    $routes->post('master/jabatan/update/(:any)', 'AdminJabatan::update/$1');
+    $routes->get('master/jabatan/delete/(:any)', 'AdminJabatan::deleteUsers/$1');
     // Admin Jam Kerja
     $routes->get('master/jam-kerja', 'AdminJamkerja::index');
     $routes->get('master/jam-kerja/add', 'AdminJamkerja::add');
@@ -69,6 +74,11 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('absensi/rekapan', 'AdminAbsensi::rekapan');
     $routes->get('absensi/exportPdf', 'AdminAbsensi::exportPdf');
 
+    // // penggajian
+    // $routes->get('penggajian', 'AdminPenggajian::index');
+    // $routes->get('penggajian/add', 'AdminPenggajian::add');
+    // $routes->post('penggajian/save', 'AdminPenggajian::save');
+    // $routes->get('penggajian/getJumlahHadir', 'AdminPenggajian::getJumlahHadir');
 
 });
 
@@ -76,7 +86,7 @@ $routes->group('karyawan', ['filter' => 'authenticate'], function ($routes) {
     // $routes->group("Admin", ["filter" => "auth"], function ($routes) {
     $routes->get('dashboard', 'KaryawanDashboard::index', ['filter' => 'authenticate']);
 
- // Ka
+    // Ka
     $routes->get('absensi', 'KaryawanAbsensi::index');
     $routes->get('absensi/add', 'KaryawanAbsensi::add');
     $routes->post('absensi/save', 'KaryawanAbsensi::save');

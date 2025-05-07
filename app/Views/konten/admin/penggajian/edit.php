@@ -8,71 +8,62 @@
         <div class="card">
             <div class="row">
                 <div class="col-lg-6">
-                    <h5 class="card-header">Tambah Data Karyawan</h5>
+                    <h5 class="card-header">Edit Data Karyawan</h5>
                 </div>
                 <div class="col-lg-6 text-end">
                     <a href="/admin/karyawan" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
-                    <form method="POST" action="/admin/karyawan/save" enctype="multipart/form-data">
+                    <form method="POST" action="/admin/karyawan/update/<?= encrypt_url($karyawan['id']) ?>" enctype="multipart/form-data">
                         <?= csrf_field() ?>
+                        <input type="hidden" name="old_foto" value="<?= $karyawan['foto'] ?>">
 
                         <div class="row">
                             <div class="col-lg-6 mb-3">
                                 <label for="nama" class="form-label">Nama Karyawan</label>
-                                <input type="text" class="form-control" id="nama" name="nama" required>
+                                <input type="text" class="form-control" id="nama" name="nama" value="<?= $karyawan['nama'] ?>" required>
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="jabatan" class="form-label">Jabatan</label>
-                                <select class="form-select" id="jabatan" name="jabatan_id" required>
-                                    <option value="">Pilih Jabatan</option>
-                                    <?php foreach ($jabatanList as $jabatan): ?>
-                                        <option value="<?= $jabatan['id']; ?>"><?= $jabatan['jabatan']; ?></option>
-                                    <?php endforeach; ?>
+                                <select class="form-select" id="jabatan" name="jabatan" required>
+                                    <option value="Manager" <?= $karyawan['jabatan'] == 'Manager' ? 'selected' : '' ?>>Manager</option>
+                                    <option value="Supervisor" <?= $karyawan['jabatan'] == 'Supervisor' ? 'selected' : '' ?>>Supervisor</option>
+                                    <option value="Staff" <?= $karyawan['jabatan'] == 'Staff' ? 'selected' : '' ?>>Staff</option>
+                                    <option value="Intern" <?= $karyawan['jabatan'] == 'Intern' ? 'selected' : '' ?>>Intern</option>
                                 </select>
-                            </div>
-
-                            <div class="col-lg-6 mb-3">
-                                <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
-                                <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" required>
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="alamat" class="form-label">Alamat</label>
-                                <input type="text" class="form-control" id="alamat" name="alamat">
+                                <input type="text" class="form-control" id="alamat" name="alamat" value="<?= $karyawan['alamat'] ?>" required>
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="no_hp" class="form-label">Nomor Handphone</label>
-                                <input type="text" class="form-control" id="no_hp" name="no_hp">
+                                <input type="text" class="form-control" id="no_hp" name="no_hp" value="<?= $karyawan['no_hp'] ?>" required>
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
-                                <select class="form-select" id="jenis_kelamin" name="jenis_kelamin">
-                                    <option value="">Pilih Jenis Kelamin</option>
-                                    <option value="Laki-laki">Laki-laki</option>
-                                    <option value="Perempuan">Perempuan</option>
+                                <select class="form-select" id="jenis_kelamin" name="jenis_kelamin" required>
+                                    <option value="Laki-laki" <?= $karyawan['jenis_kelamin'] == 'Laki-laki' ? 'selected' : '' ?>>Laki-laki</option>
+                                    <option value="Perempuan" <?= $karyawan['jenis_kelamin'] == 'Perempuan' ? 'selected' : '' ?>>Perempuan</option>
                                 </select>
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="status" class="form-label">Status</label>
-                                <select class="form-select" id="status" name="status" readonly disabled>
-                                    <option value="Aktif" selected>Aktif</option>
+                                <select class="form-select" id="status" name="status" required>
+                                    <option value="Aktif" <?= $karyawan['status'] == 'Aktif' ? 'selected' : '' ?>>Aktif</option>
+                                    <option value="Non-Aktif" <?= $karyawan['status'] == 'Non-Aktif' ? 'selected' : '' ?>>Non-Aktif</option>
                                 </select>
-                                <input type="hidden" name="status" value="Aktif">
                             </div>
-
                             <div class="col-lg-6 mb-3">
                                 <label for="foto" class="form-label">Foto</label>
                                 <input type="file" class="form-control" id="foto" name="foto" onchange="previewImage(event)">
-                                <img id="preview" src="#" alt="Preview Foto" class="img-thumbnail mt-3" style="display: none; max-width: 100px;">
+                                <img id="preview" src="/uploads/karyawan/<?= $karyawan['foto'] ?>" alt="Preview Foto" class="img-thumbnail mt-3" style="max-width: 100px;">
                             </div>
                         </div>
 
                         <div class="col-lg-6 mt-5">
-                            <button class="btn btn-primary">
-                                <i class='bx bx-save me-1'></i> Simpan
-                            </button>
+                            <button class="btn btn-primary">Perbarui</button>
                         </div>
-
                     </form>
                 </div>
             </div>
@@ -91,12 +82,9 @@
 
             reader.onload = function(e) {
                 preview.src = e.target.result;
-                preview.style.display = 'block';
             };
 
             reader.readAsDataURL(file);
-        } else {
-            preview.style.display = 'none';
         }
     }
 </script>

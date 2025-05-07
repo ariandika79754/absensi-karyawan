@@ -8,7 +8,7 @@ class KaryawanModel extends Model
 {
     protected $table = 'karyawan';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['nama', 'jabatan', 'alamat', 'no_hp', 'jenis_kelamin', 'status', 'foto', 'user_id'];
+    protected $allowedFields = ['nama', 'jabatan_id', 'alamat', 'no_hp', 'jenis_kelamin', 'status', 'foto', 'user_id'];
 
     public function getAllKaryawan()
     {

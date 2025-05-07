@@ -8,12 +8,12 @@
             <div class="card-body">
                 <h4 class="text-warning">Tentang Karyawan</h4>
                 <p>Halaman <strong>Karyawan</strong> memberikan informasi lengkap mengenai data seluruh karyawan yang bekerja di RadarTV. Anda dapat melihat, menambah, mengedit, dan menghapus data sesuai kebutuhan.</p>
-                <ul class="list-unstyled">
-                    <li><i class="bx bx-check-circle text-success"></i> Lihat daftar lengkap karyawan.</li>
-                    <li><i class="bx bx-check-circle text-success"></i> Tambah data karyawan baru.</li>
-                    <li><i class="bx bx-check-circle text-success"></i> Edit data karyawan yang sudah ada.</li>
-                    <li><i class="bx bx-check-circle text-success"></i> Hapus data karyawan dengan mudah.</li>
-                </ul>
+                <ol>
+                    <li>Lihat daftar lengkap karyawan.</li>
+                    <li>Tambah data karyawan baru.</li>
+                    <li>Edit data karyawan yang sudah ada.</li>
+                    <li>Hapus data karyawan dengan mudah.</li>
+                </ol>
             </div>
         </div>
     </div>
@@ -58,8 +58,8 @@
                                         <td><?= $row['jenis_kelamin']; ?></td>
                                         <td><?= $row['tanggal_lahir']; ?></td>
                                         <td>
-                                            <span class="status-badge" 
-                                                  style="background-color: <?= ($row['status'] === 'Aktif') ? '#28a745' : '#dc3545'; ?>;">
+                                            <span class="status-badge"
+                                                style="background-color: <?= ($row['status'] === 'Aktif') ? '#28a745' : '#dc3545'; ?>;">
                                                 <?= $row['status']; ?>
                                             </span>
                                         </td>
@@ -84,10 +84,9 @@
         padding: 5px 10px;
         border-radius: 20px;
         color: white;
-      
+
         display: inline-block;
         text-align: center;
     }
 </style>
 <?= $this->endSection() ?>
-

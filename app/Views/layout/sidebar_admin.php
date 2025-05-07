@@ -18,10 +18,11 @@
     </li>
 
     <!-- Master Data -->
-    <li class="menu-item <?= ( 
-        $request->uri->getSegment(3) === 'jam-kerja' ||  
-        $request->uri->getSegment(3) === 'users'
-    ) ? 'active open' : '' ?>">
+    <li class="menu-item <?= (
+                                $request->uri->getSegment(3) === 'jam-kerja' ||
+                                $request->uri->getSegment(3) === 'jabatan' ||
+                                $request->uri->getSegment(3) === 'users'
+                            ) ? 'active open' : '' ?>">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
             <i class="menu-icon tf-icons bx bx-data"></i>
             <div data-i18n="Dashboards">Master Data</div>
@@ -31,6 +32,12 @@
                 <a href="/admin/master/jam-kerja" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-time-five"></i>
                     <div data-i18n="CRM">Jam Kerja</div>
+                </a>
+            </li>
+            <li class="menu-item <?= ($request->uri->getSegment(3) === 'jabatan') ? 'active' : '' ?>">
+                <a href="/admin/master/jabatan" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-briefcase"></i>
+                    <div data-i18n="Academy">Jabatan</div>
                 </a>
             </li>
             <li class="menu-item <?= ($request->uri->getSegment(3) === 'users') ? 'active' : '' ?>">
@@ -57,4 +64,11 @@
             <div data-i18n="pps">Absensi Karyawan</div>
         </a>
     </li>
+    <!-- <li class="menu-item <?= ($request->uri->getSegment(2) === 'penggajian') ? 'active' : '' ?>">
+        <a href="/admin/penggajian" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-money"></i>
+            <div data-i18n="pps">Penggajian</div>
+        </a>
+    </li> -->
+
 </ul>

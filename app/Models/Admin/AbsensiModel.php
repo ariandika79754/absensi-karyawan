@@ -21,13 +21,18 @@ class AbsensiModel extends Model
 
     // app/Models/AbsensiKaryawanModel.php
 
-public function getAllWithKaryawan()
-{
-    return $this->select('absensi.*, users.nama, sesi.sesi')
-                ->join('users', 'users.id = absensi.users_id')
-                ->join('sesi', 'sesi.id = absensi.sesi_id')
-                ->orderBy('tanggal', 'DESC')
-                ->findAll();
-}
-
+    public function getAllWithKaryawan()
+    {
+        return $this->select('absensi.*, users.nama, sesi.sesi')
+            ->join('users', 'users.id = absensi.users_id')
+            ->join('sesi', 'sesi.id = absensi.sesi_id')
+            ->orderBy('tanggal', 'DESC')
+            ->findAll();
+    }
+    public function getJumlahHadir($users_id, $bulan)
+    {
+        return $this->where('users_id', $users_id)
+            ->like('tanggal', $bulan) // format '2025-05'
+            ->countAllResults();
+    }
 }

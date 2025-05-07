@@ -1,7 +1,7 @@
 <?= $this->extend('layout/page') ?>
 
 <?= $this->section('content') ?>
-<h4 class="py-3 mb-4"><a href="/admin/product"><span class="text-muted fw-light">Product Ari Andika</span></a></h4>
+<h4 class="py-3 mb-4"><a href="/admin/product"><span class="text-muted fw-light">Jam Kerja/Sift</span></a></h4>
 <div class="row">
     <div class="col-lg-12 col-sm-12 mb-3">
         <div class="card">

@@ -8,12 +8,15 @@ class KaryawanModel extends Model
 {
     protected $table = 'karyawan';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['nama', 'jabatan', 'alamat', 'no_hp', 'jenis_kelamin', 'status','user_id', 'foto', 'tanggal_lahir'];
+    protected $allowedFields = ['nama', 'jabatan_id', 'alamat', 'no_hp', 'jenis_kelamin', 'status','user_id', 'foto', 'tanggal_lahir'];
 
     public function getAllKaryawan()
-    {
-        return $this->findAll();
-    }
+{
+    return $this->select('karyawan.*, jabatan.jabatan AS jabatan')
+                ->join('jabatan', 'jabatan.id = karyawan.jabatan_id', 'left')
+                ->findAll();
+}
+
 
     public function getKaryawanById($id)
     {

@@ -25,24 +25,27 @@
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="jabatan" class="form-label">Jabatan</label>
-                                <select class="form-select" id="jabatan" name="jabatan" required>
-                                    <option value="Manager" <?= $karyawan['jabatan'] == 'Manager' ? 'selected' : '' ?>>Manager</option>
-                                    <option value="Supervisor" <?= $karyawan['jabatan'] == 'Supervisor' ? 'selected' : '' ?>>Supervisor</option>
-                                    <option value="Staff" <?= $karyawan['jabatan'] == 'Staff' ? 'selected' : '' ?>>Staff</option>
-                                    <option value="Intern" <?= $karyawan['jabatan'] == 'Intern' ? 'selected' : '' ?>>Intern</option>
+                                <select class="form-select" id="jabatan" name="jabatan_id">
+                                    <option value="">Pilih Jabatan</option>
+                                    <?php foreach ($jabatanList as $jabatan): ?>
+                                        <option value="<?= $jabatan['id']; ?>" <?= ($jabatan['id'] == $karyawan['jabatan_id']) ? 'selected' : '' ?>>
+                                            <?= $jabatan['jabatan']; ?>
+                                        </option>
+                                    <?php endforeach; ?>
                                 </select>
+
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="alamat" class="form-label">Alamat</label>
-                                <input type="text" class="form-control" id="alamat" name="alamat" value="<?= $karyawan['alamat'] ?>" required>
+                                <input type="text" class="form-control" id="alamat" name="alamat" value="<?= $karyawan['alamat'] ?>">
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="no_hp" class="form-label">Nomor Handphone</label>
-                                <input type="text" class="form-control" id="no_hp" name="no_hp" value="<?= $karyawan['no_hp'] ?>" required>
+                                <input type="text" class="form-control" id="no_hp" name="no_hp" value="<?= $karyawan['no_hp'] ?>">
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
-                                <select class="form-select" id="jenis_kelamin" name="jenis_kelamin" required>
+                                <select class="form-select" id="jenis_kelamin" name="jenis_kelamin">
                                     <option value="Laki-laki" <?= $karyawan['jenis_kelamin'] == 'Laki-laki' ? 'selected' : '' ?>>Laki-laki</option>
                                     <option value="Perempuan" <?= $karyawan['jenis_kelamin'] == 'Perempuan' ? 'selected' : '' ?>>Perempuan</option>
                                 </select>

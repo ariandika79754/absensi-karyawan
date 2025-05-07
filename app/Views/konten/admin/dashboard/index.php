@@ -2,11 +2,11 @@
 <?= $this->section('content') ?>
 
 <div class="container mt-4">
-    <h3>Dashboard Absensi</h3>
+    <h1>Dashboard Absensi</h1>
     <p>Selamat datang, Admin</p>
 
     <div class="row mb-4">
-        <!-- Card Jumlah Karyawan -->
+        <!-- Card Jumlah Karyawan
         <div class="col-md-4">
             <div class="card mb-3 shadow">
                 <div class="card-body">
@@ -14,12 +14,13 @@
                     <p class="card-text display-6"><?= $jumlah_karyawan ?></p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Grafik Mingguan di Tengah -->
-        <div class="col-md-8">
-            <div class="card mb-3">
-                <div class="card-body">
+        <!-- Grafik Kehadiran -->
+        <div class="col-md-6">
+            <div class="card mb-3 h-100">
+                <div class="card-body" style="max-height: 370px; overflow-y: auto;">
                     <h5 class="card-title">Grafik Kehadiran 7 Hari Terakhir</h5>
                     <canvas id="absensiChart"></canvas>
                 </div>
@@ -27,9 +28,9 @@
         </div>
 
         <!-- Tabel Riwayat -->
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="card-body" style="max-height: 300px; overflow-y: auto;">
+        <div class="col-md-6">
+            <div class="card mb-3 h-100">
+                <div class="card-body" style="max-height: 370px; overflow-y: auto;">
                     <h5 class="card-title">Riwayat Absensi 1 Bulan Terakhir</h5>
                     <table class="table table-striped table-sm">
                         <thead>
