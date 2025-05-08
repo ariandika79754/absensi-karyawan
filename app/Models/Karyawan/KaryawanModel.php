@@ -37,12 +37,17 @@ class KaryawanModel extends Model
     }
     public function getKaryawanByUserId($userId)
     {
-        return $this->where('user_id', $userId)->first();
+        return $this->db->table('karyawan')
+            ->select('karyawan.*, jabatan.jabatan AS jabatan')
+            ->join('jabatan', 'jabatan.id = karyawan.jabatan_id', 'left') // sesuaikan kolom relasi
+            ->where('karyawan.user_id', $userId)
+            ->get()
+            ->getRowArray();
     }
+
 
     public function updateByUserId($userId, $data)
     {
         return $this->where('user_id', $userId)->set($data)->update();
     }
-  
 }
