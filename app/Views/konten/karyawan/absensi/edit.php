@@ -13,6 +13,17 @@
                     <a href="/karyawan/absensi" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
+                    <?php if (session()->getFlashdata('error')): ?>
+                        <div class="alert alert-danger">
+                            <?= session()->getFlashdata('error') ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if (session()->getFlashdata('lokasi_error')): ?>
+                        <div class="alert alert-danger">
+                            <?= session()->getFlashdata('lokasi_error') ?>
+                        </div>
+                    <?php endif; ?>
                     <!-- Form untuk mengedit data absensi -->
                     <form action="/karyawan/absensi/update/<?= encrypt_url($absensi['id']) ?>" method="POST">
                         <?= csrf_field() ?>
@@ -73,6 +84,8 @@
                                 <label class="form-label" for="keterangan">Keterangan</label>
                                 <textarea class="form-control" id="keterangan" name="keterangan" rows="3"><?= $absensi['keterangan'] ?></textarea>
                             </div>
+                            <input type="hidden" name="latitude" id="latitude">
+                            <input type="hidden" name="longitude" id="longitude">
 
                         </div>
 
@@ -116,6 +129,18 @@
         // Menambahkan event listener untuk perubahan status
         statusSelect.addEventListener('change', toggleKeteranganField);
     });
+</script>
+<script>
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            document.getElementById("latitude").value = position.coords.latitude;
+            document.getElementById("longitude").value = position.coords.longitude;
+        }, function(error) {
+            console.warn("Lokasi tidak bisa didapatkan: ", error.message);
+        });
+    } else {
+        alert("Geolocation tidak didukung di browser Anda.");
+    }
 </script>
 
 <?= $this->endSection() ?>

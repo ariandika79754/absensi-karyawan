@@ -103,7 +103,7 @@ class KaryawanAbsensi extends BaseController
         $jarak = hitungJarak($latUser, $longUser, $latKantor, $longKantor);
         // dd($jarak);
         // Jika lebih dari 100 meter dan status bukan sakit
-        if ($jarak > 1000 && $status !== 'Sakit') {
+        if ($jarak > 100 && $status !== 'Sakit') {
             session()->setFlashdata('lokasi_error', 'Absensi hanya bisa dilakukan di area kantor, kecuali jika status sakit.');
             return redirect()->to('/karyawan/absensi/add');
         }
@@ -181,24 +181,26 @@ class KaryawanAbsensi extends BaseController
         $latUser   = (float) $this->request->getPost('latitude');
         $longUser  = (float) $this->request->getPost('longitude');
 
-        $latKantor  = -5.3722827; // hanya beda 0.0000001 dari kantor
-        $longKantor = 105.2633784;
+        $latKantor  = -5.378535; // hanya beda 0.0000001 dari kantor
+        $longKantor = 105.2605675;
 
         // Hitung jarak antara lokasi pengguna dan kantor
-        function hitungJaraklokasi($lat1, $lon1, $lat2, $lon2)
+        function hitungJarakLokasi($lat1, $lon1, $lat2, $lon2)
         {
-            $earthRadius = 6371e3;
+            $earthRadius = 6371e3; // meter
             $dLat = deg2rad($lat2 - $lat1);
             $dLon = deg2rad($lon2 - $lon1);
+
             $a = sin($dLat / 2) * sin($dLat / 2) +
                 cos(deg2rad($lat1)) * cos(deg2rad($lat2)) *
                 sin($dLon / 2) * sin($dLon / 2);
             $c = 2 * atan2(sqrt($a), sqrt(1 - $a));
-            return $earthRadius * $c;
+
+            return $earthRadius * $c; // hasil dalam meter
         }
 
         $jarak = hitungJaraklokasi($latUser, $longUser, $latKantor, $longKantor);
-
+// dd($jarak);
         // Cek jika status Hadir tapi di luar lokasi
         if ($jarak > 1000 && $status === 'Hadir') {
             return redirect()->back()->withInput()->with('lokasi_error', 'Update absensi dengan status Hadir hanya dapat dilakukan di area kantor.');
@@ -211,7 +213,7 @@ class KaryawanAbsensi extends BaseController
             'sesi_id'    => 'required|numeric',
             'jam_masuk'  => 'required',
             'jam_keluar' => 'required',
-            'status'     => 'required|in_list[Hadir,Izin,Sakit]', // only 'Hadir', 'Izin', 'Sakit'
+            'status'     => 'required|in_list[Hadir,Izin,Sakit,Telat]', // only 'Hadir', 'Izin', 'Sakit'
         ]);
 
         if (!$validation) {
