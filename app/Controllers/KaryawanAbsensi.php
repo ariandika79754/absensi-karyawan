@@ -67,8 +67,8 @@ class KaryawanAbsensi extends BaseController
         $longUser = (float) $this->request->getPost('longitude');
 
         // Koordinat kantor RadarTV
-        $latKantor  = -5.378535; // hanya beda 0.0000001 dari kantor
-        $longKantor = 105.2605675;
+        $latKantor  = -5.3786508; // hanya beda 0.0000001 dari kantor
+        $longKantor = 105.2606752;
 
 
         // Koordinat rumah ari 
@@ -101,9 +101,18 @@ class KaryawanAbsensi extends BaseController
         }
 
         $jarak = hitungJarak($latUser, $longUser, $latKantor, $longKantor);
+        echo "Jarak: $jarak meter";  // Debugging
+        // dd([
+        //     'latUser' => $latUser,
+        //     'longUser' => $longUser,
+        //     'latKantor' => $latKantor,
+        //     'longKantor' => $longKantor,
+        //     'jarak' => hitungJarak($latUser, $longUser, $latKantor, $longKantor)
+        //   ]);
+          
         // dd($jarak);
         // Jika lebih dari 100 meter dan status bukan sakit
-        if ($jarak > 100 && $status !== 'Sakit') {
+        if ($jarak > 1000 && $status !== 'Sakit') {
             session()->setFlashdata('lokasi_error', 'Absensi hanya bisa dilakukan di area kantor, kecuali jika status sakit.');
             return redirect()->to('/karyawan/absensi/add');
         }
@@ -145,7 +154,9 @@ class KaryawanAbsensi extends BaseController
             'jam_keluar' => $this->request->getPost('jam_keluar'),
             'status'     => $status,
             'keterangan' => $keterangan,
+          
         ]);
+        
 
         return redirect()->to('/karyawan/absensi')->with('success', 'Data absensi berhasil disimpan.');
     }
@@ -181,8 +192,8 @@ class KaryawanAbsensi extends BaseController
         $latUser   = (float) $this->request->getPost('latitude');
         $longUser  = (float) $this->request->getPost('longitude');
 
-        $latKantor  = -5.378535; // hanya beda 0.0000001 dari kantor
-        $longKantor = 105.2605675;
+        $latKantor  = -5.3786508; // hanya beda 0.0000001 dari kantor
+        $longKantor = 105.2606752;
 
         // Hitung jarak antara lokasi pengguna dan kantor
         function hitungJarakLokasi($lat1, $lon1, $lat2, $lon2)
@@ -200,9 +211,9 @@ class KaryawanAbsensi extends BaseController
         }
 
         $jarak = hitungJaraklokasi($latUser, $longUser, $latKantor, $longKantor);
-// dd($jarak);
+dd($jarak);
         // Cek jika status Hadir tapi di luar lokasi
-        if ($jarak > 1000 && $status === 'Hadir') {
+        if ($jarak > 100 && $status === 'Hadir') {
             return redirect()->back()->withInput()->with('lokasi_error', 'Update absensi dengan status Hadir hanya dapat dilakukan di area kantor.');
         }
 

@@ -96,6 +96,65 @@
                             <i class='bx bx-save me-1'></i> Simpan
                         </button>
                     </form>
+                    <!-- Leaflet CSS & JS -->
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+                    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+                    <!-- Container Peta -->
+                    <div class="col-lg-12 mb-3">
+                        <label class="form-label">Lokasi Anda Sekarang</label>
+                        <div id="map" style="height: 300px;"></div>
+                    </div>
+
+                    <script>
+                        const kantorLat = -5.3786508; // Ganti dengan lat kantor kamu
+                        const kantorLng = 105.2606752; // Ganti dengan lng kantor kamu
+
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(function(position) {
+                                const userLat = position.coords.latitude;
+                                const userLng = position.coords.longitude;
+
+                                // Isi hidden input
+                                document.getElementById('latitude').value = userLat;
+                                document.getElementById('longitude').value = userLng;
+
+                                // Inisialisasi peta
+                                const map = L.map('map').setView([userLat, userLng], 16);
+
+                                // Tambahkan layer OpenStreetMap
+                                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                    attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+                                }).addTo(map);
+
+                                // Marker lokasi user
+                                const userMarker = L.marker([userLat, userLng]).addTo(map)
+                                    .bindPopup("Lokasi Anda Sekarang").openPopup();
+
+                                // Marker kantor
+                                const kantorMarker = L.marker([kantorLat, kantorLng], {
+                                    icon: L.icon({
+                                        iconUrl: 'https://cdn-icons-png.flaticon.com/512/684/684908.png',
+                                        iconSize: [30, 30],
+                                        iconAnchor: [15, 30]
+                                    })
+                                }).addTo(map).bindPopup("Lokasi Kantor");
+
+                                // Gambar garis antara user dan kantor
+                                const polyline = L.polyline([
+                                    [userLat, userLng],
+                                    [kantorLat, kantorLng]
+                                ], {
+                                    color: 'red'
+                                }).addTo(map);
+                            }, function(error) {
+                                alert("Gagal mendapatkan lokasi. Pastikan izin lokasi diaktifkan.");
+                            });
+                        } else {
+                            alert("Browser tidak mendukung geolokasi.");
+                        }
+                    </script>
+
                 </div>
             </div>
         </div>
