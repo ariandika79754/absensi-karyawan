@@ -211,9 +211,9 @@ class KaryawanAbsensi extends BaseController
         }
 
         $jarak = hitungJaraklokasi($latUser, $longUser, $latKantor, $longKantor);
-dd($jarak);
+// dd($jarak);
         // Cek jika status Hadir tapi di luar lokasi
-        if ($jarak > 100 && $status === 'Hadir') {
+        if ($jarak > 1000 && $status === 'Hadir') {
             return redirect()->back()->withInput()->with('lokasi_error', 'Update absensi dengan status Hadir hanya dapat dilakukan di area kantor.');
         }
 

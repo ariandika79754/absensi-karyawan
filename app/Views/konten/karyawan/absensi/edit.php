@@ -93,6 +93,57 @@
                             <button type="submit" class="btn btn-primary">Update</button>
                         </div>
                     </form>
+                    <div class="col-lg-12 mb-3">
+                        <label class="form-label">Lokasi Anda Sekarang</label>
+                        <div id="map" style="height: 300px;"></div>
+                    </div>
+
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+                    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+                    <script>
+                        const kantorLat = -5.3786508;
+                        const kantorLng = 105.2606752;
+
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(function(position) {
+                                const userLat = position.coords.latitude;
+                                const userLng = position.coords.longitude;
+
+                                // Isi input hidden
+                                document.getElementById('latitude').value = userLat;
+                                document.getElementById('longitude').value = userLng;
+
+                                const map = L.map('map').setView([userLat, userLng], 16);
+
+                                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                    attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
+                                }).addTo(map);
+
+                                L.marker([userLat, userLng]).addTo(map).bindPopup("Lokasi Anda Sekarang").openPopup();
+
+                                L.marker([kantorLat, kantorLng], {
+                                    icon: L.icon({
+                                        iconUrl: 'https://cdn-icons-png.flaticon.com/512/684/684908.png',
+                                        iconSize: [30, 30],
+                                        iconAnchor: [15, 30]
+                                    })
+                                }).addTo(map).bindPopup("Lokasi Kantor");
+
+                                L.polyline([
+                                    [userLat, userLng],
+                                    [kantorLat, kantorLng]
+                                ], {
+                                    color: 'red'
+                                }).addTo(map);
+                            }, function(error) {
+                                alert("Gagal mendapatkan lokasi. Pastikan izin lokasi diaktifkan.");
+                            });
+                        } else {
+                            alert("Browser tidak mendukung geolokasi.");
+                        }
+                    </script>
+
                 </div>
             </div>
         </div>

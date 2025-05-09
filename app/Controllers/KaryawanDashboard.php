@@ -15,17 +15,23 @@ class KaryawanDashboard extends BaseController
     {
         $absensiModel = new \App\Models\Admin\AbsensiModel();
         $userId = session()->get('data')['id']; // Ambil users_id dari session
-    
+
         // Ringkasan berdasarkan users_id
         $data['hadir'] = $absensiModel->where('users_id', $userId)->where('status', 'Hadir')->countAllResults();
         $data['izin'] = $absensiModel->where('users_id', $userId)->where('status', 'Izin')->countAllResults();
-        $data['alpha'] = $absensiModel->where('users_id', $userId)->where('status', 'Alpha')->countAllResults();
+        $data['terlambat'] = $absensiModel->where('users_id', $userId)->where('status', 'Terlambat')->countAllResults();
         $data['sakit'] = $absensiModel->where('users_id', $userId)->where('status', 'sakit')->countAllResults();
-    
+        // Cek apakah user sudah absen hari ini
+        $cekHariIni = $absensiModel->where('users_id', $userId)
+            ->where('DATE(tanggal)', date('Y-m-d'))
+            ->countAllResults();
+
+        $data['belum_absen'] = ($cekHariIni == 0); // True jika belum absen
+
         // Grafik kehadiran 7 hari terakhir
         $today = date('Y-m-d');
         $startDate = date('Y-m-d', strtotime('-6 days', strtotime($today)));
-    
+
         $grafikData = $absensiModel->select("DATE(tanggal) as tanggal, COUNT(*) as jumlah")
             ->where('users_id', $userId)
             ->where('status', 'Hadir')
@@ -34,7 +40,7 @@ class KaryawanDashboard extends BaseController
             ->groupBy('DATE(tanggal)')
             ->orderBy('tanggal', 'ASC')
             ->findAll();
-    
+
         // Siapkan data default 0 untuk 7 hari terakhir
         $grafikTanggal = [];
         $grafikJumlah = [];
@@ -43,17 +49,17 @@ class KaryawanDashboard extends BaseController
             $grafikTanggal[] = date('D', strtotime($tanggal)); // e.g., "Mon", "Tue"
             $grafikJumlah[$tanggal] = 0;
         }
-    
+
         // Masukkan hasil query ke array jumlah hadir
         foreach ($grafikData as $row) {
             $grafikJumlah[$row['tanggal']] = (int) $row['jumlah'];
         }
-    
+
         $data['grafik'] = [
             'tanggal' => array_values($grafikTanggal),
             'hadir' => array_values($grafikJumlah)
         ];
-    
+
         // Ambil data absensi 1 bulan terakhir untuk user
         $builder = $absensiModel->builder();
         $builder->select('absensi.*, users.nama');
@@ -63,7 +69,7 @@ class KaryawanDashboard extends BaseController
         $builder->orderBy('tanggal', 'DESC');
         $query = $builder->get();
         $data['absensi_terakhir'] = $query->getResultArray();
-    
+
         return view('konten/karyawan/dashboard/index', $data);
     }
 }

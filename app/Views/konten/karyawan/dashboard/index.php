@@ -6,38 +6,51 @@
     <p>Selamat datang, <?= $absensi_terakhir[0]['nama'] ?? 'User' ?></p>
 
     <div class="row mb-4">
+        <?php if ($belum_absen): ?>
+            <div class="alert alert-warning" role="alert">
+            ⚠️Anda belum melakukan absensi hari ini. Silakan absen terlebih dahulu.
+            </div>
+        <?php endif; ?>
+
         <!-- Kolom kiri: Statistik -->
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <div class="card text-black bg-success" style="height: 120px;">
+                    <!-- Hadir: warna hijau pastel -->
+                    <div class="card text-dark" style="height: 120px; background: #d4edda;">
                         <div class="card-body">
-                            <h5>Hadir</h5>
+                            <h5 class="mb-2">Hadir</h5>
                             <p class="fs-4 mb-0 mt-2 text-center"><?= $hadir ?></p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 mb-3">
-                    <div class="card text-black" style="height: 120px; background: #FFFF00;">
+                    <!-- Sakit: warna kuning pastel -->
+                    <div class="card text-dark" style="height: 120px; background: #fff3cd;">
                         <div class="card-body">
-                            <h5>Sakit</h5>
+                            <h5 class="mb-2">Sakit</h5>
                             <p class="fs-4 mb-0 mt-2 text-center"><?= $sakit ?></p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 mb-3">
-                    <div class="card text-black bg-info" style="height: 120px;">
+                    <!-- Izin: tetap bg-info -->
+                    <div class="card text-white bg-info" style="height: 120px;">
                         <div class="card-body">
-                            <h5>Izin</h5>
+                            <h5 class="mb-2 text-white">Izin</h5>
                             <p class="fs-4 mb-0 mt-2 text-center"><?= $izin ?></p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 mb-3">
-                    <div class="card text-black" style="height: 120px; background: #FF0000">
+                    <!-- Terlambat: tetap merah -->
+                    <div class="card text-white" style="height: 120px; background: #dc3545;">
                         <div class="card-body">
-                            <h5>Alpha</h5>
-                            <p class="fs-4 mb-0 mt-2 text-center"><?= $alpha ?></p>
+                            <h5 class="mb-2 text-white">Terlambat</h5>
+                            <p class="fs-4 mb-0 mt-2 text-center"><?= $terlambat ?></p>
                         </div>
                     </div>
                 </div>
