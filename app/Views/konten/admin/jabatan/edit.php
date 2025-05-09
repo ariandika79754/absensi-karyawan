@@ -22,11 +22,7 @@
                                 <input type="text" class="form-control" id="jabatan" name="jabatan" value="<?= $jabatan['jabatan'] ?>" required>
                             </div>
 
-                            <!-- <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="gaji_bulanan">Gaji Bulanan</label>
-                                <input type="text" class="form-control" id="gaji_bulanan" name="gaji_bulanan" value="<?= number_format($jabatan['gaji_bulanan'], 0, ',', '.') ?>" required>
-                            </div> -->
-
+                          
                         </div>
 
                         <div class="col-lg-6 mt-5">

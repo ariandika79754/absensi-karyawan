@@ -110,7 +110,7 @@ class AdminJabatan extends BaseController
 
     // Delete
 
-    public function deleteJamKerja($id)
+    public function deleteJabatan($id)
     {
         $this->jabatanModel->delete(decrypt_url($id));
         session()->setFlashdata('error', 'Berhasil menghapus data.'); // tambahkan ini

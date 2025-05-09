@@ -17,10 +17,37 @@ class KaryawanDashboard extends BaseController
         $userId = session()->get('data')['id']; // Ambil users_id dari session
 
         // Ringkasan berdasarkan users_id
-        $data['hadir'] = $absensiModel->where('users_id', $userId)->where('status', 'Hadir')->countAllResults();
-        $data['izin'] = $absensiModel->where('users_id', $userId)->where('status', 'Izin')->countAllResults();
-        $data['terlambat'] = $absensiModel->where('users_id', $userId)->where('status', 'Terlambat')->countAllResults();
-        $data['sakit'] = $absensiModel->where('users_id', $userId)->where('status', 'sakit')->countAllResults();
+        $bulanIniAwal = date('Y-m-01');
+        $bulanIniAkhir = date('Y-m-t');
+
+        $data['hadir'] = $absensiModel
+            ->where('users_id', $userId)
+            ->where('status', 'Hadir')
+            ->where('tanggal >=', $bulanIniAwal)
+            ->where('tanggal <=', $bulanIniAkhir)
+            ->countAllResults();
+
+        $data['izin'] = $absensiModel
+            ->where('users_id', $userId)
+            ->where('status', 'Izin')
+            ->where('tanggal >=', $bulanIniAwal)
+            ->where('tanggal <=', $bulanIniAkhir)
+            ->countAllResults();
+
+        $data['terlambat'] = $absensiModel
+            ->where('users_id', $userId)
+            ->where('status', 'Terlambat')
+            ->where('tanggal >=', $bulanIniAwal)
+            ->where('tanggal <=', $bulanIniAkhir)
+            ->countAllResults();
+
+        $data['sakit'] = $absensiModel
+            ->where('users_id', $userId)
+            ->where('status', 'sakit')
+            ->where('tanggal >=', $bulanIniAwal)
+            ->where('tanggal <=', $bulanIniAkhir)
+            ->countAllResults();
+
         // Cek apakah user sudah absen hari ini
         $cekHariIni = $absensiModel->where('users_id', $userId)
             ->where('DATE(tanggal)', date('Y-m-d'))

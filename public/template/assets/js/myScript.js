@@ -52,7 +52,9 @@ function confirmDeleteJamKerja(id) {
         }
     });
 }
-function confirmDelete(id) {
+
+
+function confirmDeleteJabatan(id) {
     swal({
         title: "Apakah Anda yakin?",
         text: "Setelah dihapus, data Anda akan benar-benar hilang!",
@@ -63,14 +65,14 @@ function confirmDelete(id) {
     .then((willDelete) => {
         if (willDelete) {
             // Jika user menekan tombol OK pada SweetAlert
-            window.location.href = "/admin/product/delete/" + id;
+            window.location.href = "/admin/master/jabatan/delete/" + id;
         } else {
             // Jika user menekan tombol Cancel pada SweetAlert
             swal("Batal menghapus data!");
         }
     });
 }
-function confirmDeletePelanggan(id) {
+function confirmDeleteUsers(id) {
     swal({
         title: "Apakah Anda yakin?",
         text: "Setelah dihapus, data Anda akan benar-benar hilang!",
@@ -81,7 +83,7 @@ function confirmDeletePelanggan(id) {
     .then((willDelete) => {
         if (willDelete) {
             // Jika user menekan tombol OK pada SweetAlert
-            window.location.href = "/admin/product/delete/" + id;
+            window.location.href = "/admin/master/users/delete/" + id;
         } else {
             // Jika user menekan tombol Cancel pada SweetAlert
             swal("Batal menghapus data!");

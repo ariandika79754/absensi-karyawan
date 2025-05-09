@@ -134,7 +134,7 @@ class KaryawanAbsensi extends BaseController
             'sesi_id'    => 'required|numeric',
             'jam_masuk'  => 'required',
             'jam_keluar' => 'required',
-            'status'     => 'required|in_list[Hadir,Izin,Sakit,Telat]',
+            'status'     => 'required|in_list[Hadir,Izin,Sakit,Terlambat]',
         ]);
 
         if (!$validation) {
@@ -224,7 +224,7 @@ class KaryawanAbsensi extends BaseController
             'sesi_id'    => 'required|numeric',
             'jam_masuk'  => 'required',
             'jam_keluar' => 'required',
-            'status'     => 'required|in_list[Hadir,Izin,Sakit,Telat]', // only 'Hadir', 'Izin', 'Sakit'
+            'status'     => 'required|in_list[Hadir,Izin,Sakit,Terlambat]', // only 'Hadir', 'Izin', 'Sakit'
         ]);
 
         if (!$validation) {

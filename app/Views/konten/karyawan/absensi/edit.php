@@ -40,7 +40,7 @@
 
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="tanggal">Tanggal</label>
-                                <input type="date" class="form-control" id="tanggal" name="tanggal" value="<?= $absensi['tanggal'] ?>" required>
+                                <input type="date" class="form-control" id="tanggal" name="tanggal" value="<?= $absensi['tanggal'] ?>" readonly required>
                             </div>
 
                             <div class="col-lg-6 mb-3">

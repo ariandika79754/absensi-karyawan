@@ -44,6 +44,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     // Admin Users
     $routes->get('master/users', 'AdminUsers::index');
     $routes->get('master/users/add', 'AdminUsers::add');
+    $routes->post('master/users/save', 'AdminUsers::save');
     $routes->get('master/users/edit/(:any)', 'AdminUsers::edit/$1');
     $routes->post('master/users/update/(:any)', 'AdminUsers::update/$1');
     $routes->get('master/users/delete/(:any)', 'AdminUsers::deleteUsers/$1');
@@ -54,7 +55,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('master/jabatan/save', 'AdminJabatan::save');
     $routes->get('master/jabatan/edit/(:any)', 'AdminJabatan::edit/$1');
     $routes->post('master/jabatan/update/(:any)', 'AdminJabatan::update/$1');
-    $routes->get('master/jabatan/delete/(:any)', 'AdminJabatan::deleteUsers/$1');
+    $routes->get('master/jabatan/delete/(:any)', 'AdminJabatan::deleteJabatan/$1');
     // Admin Jam Kerja
     $routes->get('master/jam-kerja', 'AdminJamkerja::index');
     $routes->get('master/jam-kerja/add', 'AdminJamkerja::add');
