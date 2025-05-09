@@ -13,7 +13,7 @@ class KaryawanDashboard extends BaseController
 
     public function index()
     {
-        $absensiModel = new \App\Models\Admin\AbsensiModel();
+       $absensiModel = new \App\Models\Karyawan\AbsensiModel();
         $userId = session()->get('data')['id']; // Ambil users_id dari session
 
         // Ringkasan berdasarkan users_id
