@@ -94,13 +94,17 @@ class Auth extends BaseController
                     return redirect()->to('/admin/dashboard');
                     break;
                 case 'Karyawan':
+                    $karyawan = $this->db->table('karyawan')->where('user_id', $user['id'])->get()->getRowArray();
+
                     $session->set('data', $user);
+                    $session->set('karyawan', $karyawan); // Simpan data karyawan ke session
                     $session->set('role', $user['role']);
                     $session->set([
                         'logged_in' => TRUE
                     ]);
                     return redirect()->to('/karyawan/dashboard');
                     break;
+
 
                 default:
                     return redirect()->to('/');
@@ -145,7 +149,7 @@ class Auth extends BaseController
                 'password' => hash('sha256', sha1($this->request->getPost('password'))), // Hash yang sama
                 'nama' => $this->request->getPost('nama'),
                 'role_id' => 2, // Set default role_id = 2
-            ]);            
+            ]);
 
             return redirect()->to('/')->with('success', 'Account created successfully. Please log in.');
         }

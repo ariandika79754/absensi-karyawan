@@ -123,7 +123,7 @@
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
 
-                                        <img src="/template/assets/img/logo/defaultt.png" alt class="w-px-40 h-5 rounded-circle" />
+                                        <img src="/uploads/karyawan/<?= (session()->get('role') == 'Karyawan' && session()->get('karyawan')['foto']) ? session()->get('karyawan')['foto'] : 'defaultt.png'; ?>" alt class="w-px-40 h-5 rounded-circle" />
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
@@ -132,7 +132,8 @@
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="/template/assets/img/logo/defaultt.png" alt class="w-px-40 h-5 rounded-circle" />
+                                                        <img src="/uploads/karyawan/<?= (session()->get('role') == 'Karyawan' && session()->get('karyawan')['foto']) ? session()->get('karyawan')['foto'] : 'defaultt.png'; ?>" alt class="w-px-40 h-5 rounded-circle" />
+
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
