@@ -363,11 +363,14 @@ h6 {
     width: 280px;
   }
 }
-
 .logo img {
-  max-height: 26px;
+  height: 100px;
+  width: 110px;
+  max-height: 100px; /* sesuaikan sesuai kebutuhan */
+  max-width: 100%;
   margin-right: 6px;
 }
+
 
 .logo span {
   font-size: 26px;

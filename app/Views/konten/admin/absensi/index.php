@@ -33,7 +33,8 @@
                         <i class='bx bx-calendar'></i> Rekapan Bulanan
                     </a>
                     <a href="/admin/absensi/add" class="btn btn-primary me-2 mt-3">
-                        <i class='bx bxs-message-alt-add'></i> Tambah
+                    <i class='bx bx-plus-circle'></i>
+                    Tambah
                     </a>
                 </div>
                 <div class="col-lg-12">

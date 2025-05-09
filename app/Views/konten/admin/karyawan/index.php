@@ -27,7 +27,7 @@
                     <h5 class="card-header">Karyawan</h5>
                 </div>
                 <div class="col-lg-6 text-end ">
-                    <a href="/admin/karyawan/add" class="btn btn-primary me-3 mt-3"><i class='bx bxs-message-alt-add'></i> Tambah</a>
+                    <a href="/admin/karyawan/add" class="btn btn-primary me-3 mt-3"><i class='bx bx-plus-circle'></i>Tambah</a>
                 </div>
                 <div class="col-lg-12">
                     <div class="table-responsive">

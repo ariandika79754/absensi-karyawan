@@ -30,7 +30,7 @@
                         <i class='bx bx-calendar'></i> Rekap Bulanan
                     </a>
                     <a href="/karyawan/absensi/add" class="btn btn-primary">
-                        <i class='bx bxs-message-alt-add'></i> Tambah
+                    <i class='bx bx-plus-circle'></i> Tambah
                     </a>
                 </div>
             </div>

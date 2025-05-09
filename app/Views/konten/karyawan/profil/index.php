@@ -110,6 +110,34 @@
         });
     </script>
 
+<style>
+        /* CSS untuk tampilan di perangkat mobile */
+        /* CSS untuk tampilan di perangkat mobile */
+        @media (max-width: 768px) {
+            .stat-card {
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                /* Lebar card lebih kecil di perangkat mobile */
+                margin-bottom: 15px;
+                /* Memberikan jarak antar card */
+            }
 
+          
+            /* Mengatur lebar peringatan */
+            .alert {
+                width: 90%;
+                /* Mengatur lebar alert lebih kecil di perangkat mobile */
+                margin: 10px auto;
+                /* Memusatkan peringatan dan memberi jarak atas dan bawah */
+            }
+
+            /* Memberikan jarak antar card statistik */
+            .col-md-6.mb-3 {
+                margin-bottom: 20px;
+                /* Memberikan jarak antar card statistik */
+            }
+        }
+    </style>
 
     <?= $this->endSection() ?>

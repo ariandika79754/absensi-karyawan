@@ -6,20 +6,9 @@
     <p>Selamat datang, Admin</p>
 
     <div class="row mb-4">
-        <!-- Card Jumlah Karyawan
-        <div class="col-md-4">
-            <div class="card mb-3 shadow">
-                <div class="card-body">
-                    <h5 class="card-title">Jumlah Karyawan</h5>
-                    <p class="card-text display-6"><?= $jumlah_karyawan ?></p>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- Grafik Mingguan di Tengah -->
         <!-- Grafik Kehadiran -->
-        <div class="col-md-6">
-            <div class="card mb-3 h-100">
+        <div class="col-md-6 col-12">
+            <div class="card mb-3 h-100 card-custom">
                 <div class="card-body" style="max-height: 370px; overflow-y: auto;">
                     <h5 class="card-title">Grafik Kehadiran 7 Hari Terakhir</h5>
                     <canvas id="absensiChart"></canvas>
@@ -28,8 +17,8 @@
         </div>
 
         <!-- Tabel Riwayat -->
-        <div class="col-md-6">
-            <div class="card mb-3 h-100">
+        <div class="col-md-6 col-12">
+            <div class="card mb-3 h-100 card-custom">
                 <div class="card-body" style="max-height: 370px; overflow-y: auto;">
                     <h5 class="card-title">Riwayat Absensi 1 Bulan Terakhir</h5>
                     <table class="table table-striped table-sm">
@@ -75,7 +64,6 @@
                 borderColor: 'rgba(13, 110, 253, 1)',
                 borderWidth: 1
             }]
-
         },
         options: {
             responsive: true,
@@ -88,5 +76,16 @@
         }
     });
 </script>
+
+<style>
+    /* CSS untuk mobile */
+    @media (max-width: 768px) {
+        .card-custom {
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;  /* Lebar card lebih kecil di perangkat mobile */
+        }
+    }
+</style>
 
 <?= $this->endSection() ?>

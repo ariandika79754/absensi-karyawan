@@ -8,16 +8,16 @@
     <div class="row mb-4">
         <?php if ($belum_absen): ?>
             <div class="alert alert-warning" role="alert">
-            ⚠️Anda belum melakukan absensi hari ini. Silakan absen terlebih dahulu.
+                ⚠️Anda belum melakukan absensi hari ini. Silakan absen terlebih dahulu.
             </div>
         <?php endif; ?>
 
         <!-- Kolom kiri: Statistik -->
-        <div class="col-md-6">
+        <div class="col-md-6 col-12">
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <!-- Hadir: warna hijau pastel -->
-                    <div class="card text-dark" style="height: 120px; background: #d4edda;">
+                    <div class="card text-dark stat-card" style="height: 120px; background: #d4edda;">
                         <div class="card-body">
                             <h5 class="mb-2">Hadir</h5>
                             <p class="fs-4 mb-0 mt-2 text-center"><?= $hadir ?></p>
@@ -27,7 +27,7 @@
 
                 <div class="col-md-6 mb-3">
                     <!-- Sakit: warna kuning pastel -->
-                    <div class="card text-dark" style="height: 120px; background: #fff3cd;">
+                    <div class="card text-dark stat-card" style="height: 120px; background: #fff3cd;">
                         <div class="card-body">
                             <h5 class="mb-2">Sakit</h5>
                             <p class="fs-4 mb-0 mt-2 text-center"><?= $sakit ?></p>
@@ -37,7 +37,7 @@
 
                 <div class="col-md-6 mb-3">
                     <!-- Izin: tetap bg-info -->
-                    <div class="card text-white bg-info" style="height: 120px;">
+                    <div class="card text-white bg-info stat-card" style="height: 120px;">
                         <div class="card-body">
                             <h5 class="mb-2 text-white">Izin</h5>
                             <p class="fs-4 mb-0 mt-2 text-center"><?= $izin ?></p>
@@ -47,7 +47,7 @@
 
                 <div class="col-md-6 mb-3">
                     <!-- Terlambat: tetap merah -->
-                    <div class="card text-white" style="height: 120px; background: #dc3545;">
+                    <div class="card text-white stat-card" style="height: 120px; background: #dc3545;">
                         <div class="card-body">
                             <h5 class="mb-2 text-white">Terlambat</h5>
                             <p class="fs-4 mb-0 mt-2 text-center"><?= $terlambat ?></p>
@@ -58,7 +58,7 @@
         </div>
 
         <!-- Kolom kanan: Grafik -->
-        <div class="col-md-6">
+        <div class="col-md-6 col-12">
             <div class="card mb-3">
                 <div class="card-body">
                     <h5 class="card-title">Grafik Kehadiran 7 Hari Terakhir</h5>
@@ -100,7 +100,6 @@
 
     </div>
 
-
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
@@ -128,5 +127,44 @@
             }
         });
     </script>
+
+    <style>
+        /* CSS untuk tampilan di perangkat mobile */
+        /* CSS untuk tampilan di perangkat mobile */
+        @media (max-width: 768px) {
+            .stat-card {
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                /* Lebar card lebih kecil di perangkat mobile */
+                margin-bottom: 15px;
+                /* Memberikan jarak antar card */
+            }
+
+            .table {
+                font-size: 12px;
+                /* Menyesuaikan ukuran font untuk tabel di perangkat mobile */
+            }
+
+            /* Grafik */
+            #absensiChart {
+                max-width: 100%;
+            }
+
+            /* Mengatur lebar peringatan */
+            .alert {
+                width: 90%;
+                /* Mengatur lebar alert lebih kecil di perangkat mobile */
+                margin: 10px auto;
+                /* Memusatkan peringatan dan memberi jarak atas dan bawah */
+            }
+
+            /* Memberikan jarak antar card statistik */
+            .col-md-6.mb-3 {
+                margin-bottom: 20px;
+                /* Memberikan jarak antar card statistik */
+            }
+        }
+    </style>
 
     <?= $this->endSection() ?>

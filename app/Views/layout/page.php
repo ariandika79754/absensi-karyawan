@@ -71,7 +71,7 @@
                 <div class="app-brand demo">
                     <a href="/" class="app-brand-link">
                         <img src="/template/assets/img/logo/logo.png" width="30%">
-                        <span class=" demo menu-text fw-bold ms-2">Ari Andika</span>
+                        <span class=" demo menu-text fw-bold ms-2">E-RadarTv</span>
                     </a>
 
                     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
