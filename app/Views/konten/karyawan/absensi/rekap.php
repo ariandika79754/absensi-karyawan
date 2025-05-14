@@ -12,8 +12,8 @@
     </div>
 
     <!-- Form Filter Bulan & Tahun -->
-    <form method="get" action="<?= base_url('karyawan/absensi/rekap-bulanan') ?>" class="d-flex align-items-center gap-3 mb-3 px-3">
-        <div class="ms-2"> <!-- geser dropdown bulan ke kanan -->
+    <form method="get" action="<?= base_url('karyawan/absensi/rekap-bulanan') ?>" class="filter-form d-flex flex-wrap align-items-start gap-3 mb-3 px-3">
+        <div class="bulan-field">
             <select name="bulan" class="form-select" style="min-width: 150px;">
                 <?php for ($i = 1; $i <= 12; $i++): ?>
                     <option value="<?= $i ?>" <?= $i == $bulan ? 'selected' : '' ?>>
@@ -22,16 +22,17 @@
                 <?php endfor; ?>
             </select>
         </div>
-        <div>
+        <div class="tahun-field">
             <input type="number" name="tahun" value="<?= $tahun ?>" class="form-control" style="min-width: 100px;" />
         </div>
-        <div>
+        <div class="button-group d-flex flex-wrap gap-2">
             <button type="submit" class="btn btn-primary">Tampilkan</button>
             <a href="<?= base_url('karyawan/absensi/export-pdf?bulan=' . $bulan . '&tahun=' . $tahun) ?>" class="btn btn-success">
                 <i class="bx bx-file"></i> Export PDF
             </a>
         </div>
     </form>
+
 </div>
 
 <!-- Card Rekap Absensi -->

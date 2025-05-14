@@ -42,7 +42,7 @@
                 </select>
             </div>
             <div class="col-md-2 d-flex gap-2">
-                <button type="submit" class="btn btn-primary w-100">Filter</button>
+                <button type="submit" class="btn btn-primary w-100">Tampilkan</button>
                 <a href="/admin/absensi/exportPdf?bulan=<?= $bulan ?>&tahun=<?= $tahun ?>&users_id=<?= $users_id ?>" class="btn btn-success w-100">Export PDF</a>
             </div>
         </form>

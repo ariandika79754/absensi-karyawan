@@ -19,8 +19,9 @@ class AdminDashboard extends BaseController
         $data['sakit'] = $absensiModel->where('status', 'sakit')->countAllResults();
 
         // Jumlah karyawan dari tabel users
-        $data['jumlah_karyawan'] = $usersModel->countAllResults();
-
+        // Mengambil jumlah karyawan dengan role 2
+        $data['jumlah_karyawan'] = $usersModel->where('role_id', 2)->countAllResults();
+        
         // Grafik kehadiran 7 hari terakhir
         $today = date('Y-m-d');
         $startDate = date('Y-m-d', strtotime('-6 days', strtotime($today)));

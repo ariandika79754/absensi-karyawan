@@ -30,7 +30,7 @@
                         <i class='bx bx-calendar'></i> Rekap Bulanan
                     </a>
                     <a href="/karyawan/absensi/add" class="btn btn-primary">
-                    <i class='bx bx-plus-circle'></i> Tambah
+                        <i class='bx bx-plus-circle'></i> Tambah
                     </a>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                                     <td><?= $row['jam_masuk']; ?></td>
                                     <td><?= $row['jam_keluar']; ?></td>
                                     <td><?= $row['status']; ?></td>
-                                    <td><?= $row['keterangan']; ?></td>
+                                    <td><?= !empty($row['keterangan']) ? $row['keterangan'] : '-' ?></td>
                                     <td>
                                         <?php if ($row['tanggal'] == date('Y-m-d')): ?>
                                             <a href="/karyawan/absensi/edit/<?= encrypt_url($row['id']); ?>" class="btn btn-sm btn-success">

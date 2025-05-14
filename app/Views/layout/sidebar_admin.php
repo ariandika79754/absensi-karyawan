@@ -10,8 +10,8 @@
     </li>
 
     <!-- Profile -->
-    <li class="menu-item <?= ($request->uri->getSegment(2) === 'profile') ? 'active' : '' ?>">
-        <a href="/admin/profile" class="menu-link">
+    <li class="menu-item <?= ($request->uri->getSegment(2) === 'profil') ? 'active' : '' ?>">
+        <a href="/admin/profil" class="menu-link">
             <i class="menu-icon tf-icons bx bx-id-card"></i>
             <div data-i18n="pps">Profile</div>
         </a>

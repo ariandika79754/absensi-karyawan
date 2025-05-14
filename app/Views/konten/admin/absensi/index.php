@@ -64,7 +64,7 @@
                                         <td><?= $row['jam_masuk']; ?></td>
                                         <td><?= $row['jam_keluar']; ?></td>
                                         <td><?= $row['status']; ?></td>
-                                        <td><?= $row['keterangan']; ?></td>
+                                        <td><?= !empty($row['keterangan']) ? $row['keterangan'] : '-' ?></td>
                                         <td>
                                             <a href="/admin/absensi/edit/<?= encrypt_url($row['id']); ?>" class="btn btn-sm btn-success">
                                                 <i class='bx bx-edit-alt'></i>

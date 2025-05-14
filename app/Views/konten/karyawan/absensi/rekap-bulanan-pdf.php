@@ -132,7 +132,7 @@
                             <td><?= $no++ ?></td>
                             <td><?= $r['tanggal'] ?></td>
                             <td><?= $r['status'] ?></td>
-                            <td><?= $r['keterangan'] ?></td>
+                            <td><?= !empty($r['keterangan']) ? $r['keterangan'] : '-' ?></td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else: ?>
@@ -143,7 +143,6 @@
             </tbody>
         </table>
 
-        <!-- Tabel Status dan Jumlah -->
         <!-- Tabel Status dan Jumlah -->
         <h3 class="centered-heading">Status dan Jumlah</h3>
         <div class="small-table-container">

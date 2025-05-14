@@ -30,7 +30,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('logout', 'Auth::logout', ['filter' => null]);
 
     // Admin Profile
-    $routes->get('profile', 'AdminProfil::index');
+    $routes->get('profil', 'AdminProfil::index');
     $routes->post('users/update', 'AdminProfil::updatePelanggan');
 
     // Admin Karyawan
