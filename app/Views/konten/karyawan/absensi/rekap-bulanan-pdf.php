@@ -57,7 +57,7 @@
             align-items: center;
         }
 
-        
+
         .header h4 {
             margin: 0;
             padding: 4px;
@@ -102,7 +102,7 @@
         </div>
 
         <div class="info-karyawan">
-        <h4>Berikut ini adalah laporan rekapitulasi absensi bulanan untuk karyawan yang bersangkutan:</h4>
+            <h4>Berikut ini adalah laporan rekapitulasi absensi bulanan untuk karyawan yang bersangkutan:</h4>
             <?php if (!empty($rekap)): ?>
                 <p><strong>Nama Karyawan:</strong> <?= $rekap[0]['nama_karyawan'] ?></p>
             <?php else: ?>
@@ -144,6 +144,7 @@
         </table>
 
         <!-- Tabel Status dan Jumlah -->
+        <!-- Tabel Status dan Jumlah -->
         <h3 class="centered-heading">Status dan Jumlah</h3>
         <div class="small-table-container">
             <table class="small-table">
@@ -154,11 +155,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php if (!empty($rekap)): ?>
-                        <?php foreach ($rekap as $r): ?>
+                    <?php if (!empty($statusJumlah)): ?>
+                        <?php foreach ($statusJumlah as $s): ?>
                             <tr>
-                                <td><?= $r['status'] ?></td>
-                                <td><?= $r['jumlah'] ?></td>
+                                <td><?= $s['status'] ?></td>
+                                <td><?= $s['jumlah'] ?></td>
                             </tr>
                         <?php endforeach; ?>
                     <?php else: ?>
@@ -169,6 +170,7 @@
                 </tbody>
             </table>
         </div>
+
     </div>
 </body>
 

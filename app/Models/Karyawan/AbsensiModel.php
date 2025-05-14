@@ -42,16 +42,28 @@ class AbsensiModel extends Model
     public function getRekapBulananByUsers($usersId, $bulan, $tahun)
     {
         return $this->db->table('absensi')
-            ->select('absensi.tanggal, absensi.status, absensi.keterangan, users.nama as nama_karyawan, COUNT(*) as jumlah')
-            ->join('users', 'users.id = absensi.users_id') // Assuming 'users' table and 'id' column for users
+            ->select('absensi.tanggal, absensi.status, absensi.keterangan, users.nama as nama_karyawan')
+            ->join('users', 'users.id = absensi.users_id')
             ->where('absensi.users_id', $usersId)
             ->where('MONTH(absensi.tanggal)', $bulan)
             ->where('YEAR(absensi.tanggal)', $tahun)
-            ->groupBy('absensi.tanggal, absensi.status, absensi.keterangan, users.nama')
+            ->orderBy('absensi.tanggal', 'ASC')
             ->get()
             ->getResultArray();
     }
-    
+
+    public function getJumlahPerStatus($usersId, $bulan, $tahun)
+    {
+        return $this->db->table('absensi')
+            ->select('status, COUNT(*) as jumlah')
+            ->where('users_id', $usersId)
+            ->where('MONTH(tanggal)', $bulan)
+            ->where('YEAR(tanggal)', $tahun)
+            ->groupBy('status')
+            ->get()
+            ->getResultArray();
+    }
+
 
 
     // public function getMonthlyRecap($userId, $bulan, $tahun)

@@ -109,7 +109,7 @@ class KaryawanAbsensi extends BaseController
         //     'longKantor' => $longKantor,
         //     'jarak' => hitungJarak($latUser, $longUser, $latKantor, $longKantor)
         //   ]);
-          
+
         // dd($jarak);
         // Jika lebih dari 100 meter dan status bukan sakit
         if ($jarak > 1000 && $status !== 'Sakit') {
@@ -154,9 +154,9 @@ class KaryawanAbsensi extends BaseController
             'jam_keluar' => $this->request->getPost('jam_keluar'),
             'status'     => $status,
             'keterangan' => $keterangan,
-          
+
         ]);
-        
+
 
         return redirect()->to('/karyawan/absensi')->with('success', 'Data absensi berhasil disimpan.');
     }
@@ -211,7 +211,7 @@ class KaryawanAbsensi extends BaseController
         }
 
         $jarak = hitungJaraklokasi($latUser, $longUser, $latKantor, $longKantor);
-// dd($jarak);
+        // dd($jarak);
         // Cek jika status Hadir tapi di luar lokasi
         if ($jarak > 1000 && $status === 'Hadir') {
             return redirect()->back()->withInput()->with('lokasi_error', 'Update absensi dengan status Hadir hanya dapat dilakukan di area kantor.');
@@ -305,8 +305,9 @@ class KaryawanAbsensi extends BaseController
         $bulan = $this->request->getGet('bulan');
         $tahun = $this->request->getGet('tahun');
 
-        // Ambil data rekap
+        // Ambil data
         $rekap = $this->absensiModel->getRekapBulananByUsers($usersId, $bulan, $tahun);
+        $statusJumlah = $this->absensiModel->getJumlahPerStatus($usersId, $bulan, $tahun);
 
         // Set up Dompdf
         $options = new Options();
@@ -315,26 +316,21 @@ class KaryawanAbsensi extends BaseController
 
         $dompdf = new Dompdf($options);
 
-        // Buat HTML untuk PDF
+        // View
         $html = view('konten/karyawan/absensi/rekap-bulanan-pdf', [
             'rekap' => $rekap,
+            'statusJumlah' => $statusJumlah,
             'bulan' => $bulan,
             'tahun' => $tahun,
             'namaBulan' => DateTime::createFromFormat('!m', $bulan)->format('F')
         ]);
 
-        // Load HTML ke Dompdf
         $dompdf->loadHtml($html);
-
-        // Set ukuran kertas (A4)
         $dompdf->setPaper('A4', 'portrait');
-
-        // Render PDF (mungkin memerlukan waktu sedikit)
         $dompdf->render();
-
-        // Output PDF ke browser
         $dompdf->stream("rekap_absensi_{$bulan}_{$tahun}.pdf", ["Attachment" => 0]);
     }
+
     // public function rekapBulanan($tahun = null, $bulan = null)
     // {
     //     // Jika bulan atau tahun tidak disediakan, set ke nilai default
