@@ -17,8 +17,10 @@ $routes->get('/', 'Auth::index');
 // $routes->get('/', 'Auth::index'); // Ini akan mencocokkan "/auth/"
 $routes->group('auth', ['filter' => 'redirectIfAuthenticated'], function ($routes) {
     $routes->get('/', 'Auth::index');
-    $routes->get('register', 'Auth::register');
-    $routes->post('register', 'Auth::register');
+    $routes->get('forgot-password', 'Auth::forgotPassword');
+    $routes->post('forgot-password', 'Auth::forgotPassword');
+    $routes->get('reset-password', 'Auth::resetPassword');
+$routes->post('reset-password', 'Auth::resetPassword');
     $routes->get('logout', 'Auth::logout', ['filter' => null]); // Mengecualikan dari filter
     $routes->post('check-auth', 'Auth::checkAuth');
 });

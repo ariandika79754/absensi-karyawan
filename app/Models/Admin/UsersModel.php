@@ -8,7 +8,7 @@ class UsersModel extends Model
 {
     protected $table      = 'users';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['username', 'nama', 'password', 'role_id']; // Sesuaikan dengan struktur tabel Anda
+    protected $allowedFields = ['username', 'nama', 'password', 'role_id', 'email', 'reset_token', 'reset_expires']; // Sesuaikan dengan struktur tabel Anda
 
     public function updatePassword($id, $newPassword)
     {

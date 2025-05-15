@@ -36,6 +36,10 @@
                                 <input class="form-control" type="text" id="username" name="username" value="<?= $users['username'] ?? '' ?>" />
                             </div>
                             <div class="mb-3 col-md-6">
+                                <label for="email" class="form-label">email</label>
+                                <input class="form-control" type="text" id="email" name="email" value="<?= $users['email'] ?? '' ?>" />
+                            </div>
+                            <div class="mb-3 col-md-6">
                                 <label for="password" class="form-label">Password</label>
                                 <div class="input-group">
                                     <input class="form-control" type="password" id="password" name="password" value="" />

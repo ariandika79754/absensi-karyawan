@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
@@ -8,89 +8,100 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: #fff;
+            color: #000;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        h1,
-        h3 {
-            text-align: center;
-            color: #2c3e50;
         }
 
         .container {
-            width: 100%;
-            max-width: 1200px;
+            width: 95%;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 15px;
-        }
-
-        .table th,
-        .table td {
-            padding: 12px;
-            border: 1px solid #000;
-            text-align: left;
-        }
-
-        /* Mengatur kolom nomor menjadi lebih kecil */
-        .table td:first-child {
-            text-align: center;
-            width: 40px;
-            /* Ukuran lebih kecil untuk kolom nomor */
         }
 
         .header {
             display: flex;
-            flex-direction: column;
             align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
+        .header img {
+            height: 80px;
+        }
 
-        .header h4 {
+        .header h1 {
             margin: 0;
-            padding: 4px;
+            font-size: 24px;
+            text-align: center;
         }
 
         .info-karyawan {
-            margin-left: 40px;
-            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .info-karyawan p {
+            margin: 4px 0;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
             margin-top: 10px;
         }
 
+        th,
+        td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background: #f2f2f2;
+        }
+        .no-border-table td {
+    border: none !important;
+    padding: 2px 0;
+}
+.no-border-table {
+    border: none !important;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.no-border-table td.separator {
+    padding: 0 4px;
+    width: 10px;
+}
+
         .small-table-container {
             width: 60%;
-            margin: 0 auto;
+            margin: 20px auto;
         }
 
-        .small-table {
-            width: 100%;
-            font-size: 15px;
-            border-collapse: collapse;
-        }
+        @media print {
+            body {
+                color: #000;
+            }
 
-        .small-table th,
-        .small-table td {
-            padding: 10px;
-            border: 1px solid #000;
-            text-align: left;
-            /* Pastikan teks pada kolom status dan jumlah rata kiri */
-        }
+            .container {
+                page-break-inside: avoid;
+            }
 
-        .centered-heading {
-            text-align: center;
-            margin-top: 40px;
+            .no-print {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -98,24 +109,36 @@
 <body>
     <div class="container">
         <div class="header">
+            <!-- <img src="<?= base_url('assets/img/logo.png') ?>" alt="Logo Perusahaan"> -->
             <h1>Rekap Absensi Bulan <?= $namaBulan ?> <?= $tahun ?></h1>
         </div>
 
         <div class="info-karyawan">
-            <h4>Berikut ini adalah laporan rekapitulasi absensi bulanan untuk karyawan yang bersangkutan:</h4>
-            <?php if (!empty($rekap)): ?>
-                <p><strong>Nama Karyawan:</strong> <?= $rekap[0]['nama_karyawan'] ?></p>
-            <?php else: ?>
-                <p><strong>Nama Karyawan:</strong> Tidak ada data</p>
-            <?php endif; ?>
+    <h4>Berikut ini adalah laporan rekapitulasi absensi bulanan untuk karyawan yang bersangkutan:</h4>
+    <table class="no-border-table">
+    <tr>
+        <td style="width: 180px;"><strong>Nama Karyawan</strong></td>
+        <td class="separator">:</td>
+        <td><?= !empty($rekap) ? $rekap[0]['nama_karyawan'] : 'Tidak ada data' ?></td>
+    </tr>
+    <tr>
+        <td><strong>Nama Perusahaan</strong></td>
+        <td class="separator">:</td>
+        <td>PT Radar Lampung Visual (RadarTv)</td>
+    </tr>
+    <tr>
+        <td><strong>Kabupaten / Provinsi</strong></td>
+        <td class="separator">:</td>
+        <td>Bandar Lampung / Lampung</td>
+    </tr>
+</table>
 
-            <p><strong>Nama Perusahaan:</strong> PT Radar Lampung Visual (RadarTv)</p>
-            <p><strong>Kabupaten / Provinsi:</strong> Bandar Lampung / Lampung</p>
-        </div>
 
-        <!-- Tabel Absensi -->
-        <h3 class="centered-heading">Daftar Absensi</h3>
-        <table class="table">
+</div>
+
+
+        <h3>Daftar Absensi</h3>
+        <table>
             <thead>
                 <tr>
                     <th>No.</th>
@@ -137,16 +160,15 @@
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="4" style="text-align: center;">Tidak ada data absensi</td>
+                        <td colspan="4" style="text-align:center;">Tidak ada data absensi</td>
                     </tr>
                 <?php endif; ?>
             </tbody>
         </table>
 
-        <!-- Tabel Status dan Jumlah -->
-        <h3 class="centered-heading">Status dan Jumlah</h3>
+        <h3>Status dan Jumlah</h3>
         <div class="small-table-container">
-            <table class="small-table">
+            <table>
                 <thead>
                     <tr>
                         <th>Status</th>
@@ -163,13 +185,12 @@
                         <?php endforeach; ?>
                     <?php else: ?>
                         <tr>
-                            <td colspan="2" style="text-align: center;">Tidak ada data status</td>
+                            <td colspan="2" style="text-align:center;">Tidak ada data status</td>
                         </tr>
                     <?php endif; ?>
                 </tbody>
             </table>
         </div>
-
     </div>
 </body>
 

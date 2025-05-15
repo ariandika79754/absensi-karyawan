@@ -156,4 +156,56 @@ class Auth extends BaseController
 
         return view('auth/register');
     }
+    public function forgotPassword()
+    {
+    helper(['form']);
+
+    if ($this->request->getMethod() === 'post') {
+        $email = $this->request->getPost('email');
+
+        $user = $this->userModel
+            ->where('email', $email)
+            ->first();
+
+        if ($user) {
+            // Simpan ID user ke session sementara untuk reset
+            session()->set('reset_user_id', $user['id']);
+            return redirect()->to('/auth/reset-password');
+        } else {
+            return redirect()->back()->with('error', 'Email tidak ditemukan!');
+        }
+    }
+
+    return view('auth/forgot_password');
+    }
+
+
+public function resetPassword()
+{
+    helper(['form']);
+
+    if ($this->request->getMethod() === 'post') {
+        $password = $this->request->getPost('password');
+        $confirm = $this->request->getPost('confirm_password');
+
+        if ($password !== $confirm) {
+            return redirect()->back()->with('error', 'Password dan konfirmasi tidak cocok!');
+        }
+
+        $userId = session()->get('reset_user_id');
+        if (!$userId) {
+            return redirect()->to('/auth/forgot-password')->with('error', 'Sesi tidak valid!');
+        }
+
+        // Update password
+        $this->userModel->updatePassword($userId, $password);
+        session()->remove('reset_user_id');
+
+        return redirect()->to('/')->with('success', 'Password berhasil direset. Silakan login.');
+    }
+
+    return view('auth/reset_password');
+}
+
+
 }
