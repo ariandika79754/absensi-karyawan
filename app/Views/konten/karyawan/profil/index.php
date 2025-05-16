@@ -82,7 +82,7 @@
         </div>
 
         <div class="mt-2">
-            <button type="submit" class="btn btn-primary me-2">Simpan Perubahan</button>
+            <button type="submit" class="btn btn-primary me-2"><i class='bx bx-save me-1'></i> Simpan Perubahan</button>
         </div>
 
 
