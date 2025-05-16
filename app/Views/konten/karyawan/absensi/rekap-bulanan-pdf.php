@@ -109,9 +109,27 @@
 <body>
     <div class="container">
         <div class="header">
-            <!-- <img src="<?= base_url('assets/img/logo.png') ?>" alt="Logo Perusahaan"> -->
-            <h1>Rekap Absensi Bulan <?= $namaBulan ?> <?= $tahun ?></h1>
-        </div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+        <tr>
+            <td style="width: 100px; text-align: center; vertical-align: middle;">
+                <?php
+                $logoPath = FCPATH . 'assets/img/logo.png';
+                if (file_exists($logoPath)):
+                    $logoBase64 = base64_encode(file_get_contents($logoPath));
+                    $logoMime = mime_content_type($logoPath);
+                ?>
+                    <img src="data:<?= $logoMime ?>;base64,<?= $logoBase64 ?>" alt="Logo Perusahaan" style="height: 80px;">
+                <?php else: ?>
+                    <p>Logo tidak ditemukan.</p>
+                <?php endif; ?>
+            </td>
+            <td style="text-align: center; vertical-align: middle;">
+                <h1 style="margin: 0; font-size: 24px;">Rekap Absensi Bulan <?= $namaBulan ?> <?= $tahun ?></h1>
+            </td>
+        </tr>
+    </table>
+</div>
+
 
         <div class="info-karyawan">
     <h4>Berikut ini adalah laporan rekapitulasi absensi bulanan untuk karyawan yang bersangkutan:</h4>

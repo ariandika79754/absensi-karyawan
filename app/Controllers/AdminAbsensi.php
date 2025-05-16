@@ -160,52 +160,58 @@ class AdminAbsensi extends BaseController
     // Tambahkan di atas file jika belum
 
     public function exportPdf()
-    {
-        $bulan = $this->request->getGet('bulan') ?? date('n');
-        $tahun = $this->request->getGet('tahun') ?? date('Y');
-        $users_id = $this->request->getGet('users_id');
+{
+    $bulan = $this->request->getGet('bulan') ?? date('n');
+    $tahun = $this->request->getGet('tahun') ?? date('Y');
+    $users_id = $this->request->getGet('users_id');
 
-        // Mengambil data absensi
-        $builder = $this->absensiModel
-            ->select('absensi.*, users.nama as nama_karyawan, sesi.sesi as sesi')
-            ->join('users', 'users.id = absensi.users_id')
-            ->join('sesi', 'sesi.id = absensi.sesi_id')
-            ->where('MONTH(absensi.tanggal)', $bulan)
-            ->where('YEAR(absensi.tanggal)', $tahun);
+    $builder = $this->absensiModel
+        ->select('absensi.*, users.nama as nama_karyawan, sesi.sesi as sesi')
+        ->join('users', 'users.id = absensi.users_id')
+        ->join('sesi', 'sesi.id = absensi.sesi_id')
+        ->where('MONTH(absensi.tanggal)', $bulan)
+        ->where('YEAR(absensi.tanggal)', $tahun);
 
-        if (!empty($users_id)) {
-            $builder->where('users.id', $users_id);
-        }
-
-        $rekapan = $builder->orderBy('tanggal', 'ASC')->findAll();
-
-        // Menghitung jumlah status (Hadir, Sakit, Alfa, dll)
-        $statusCount = [
-            'Hadir' => 0,
-            'Sakit' => 0,
-            'Alfa' => 0,
-            // Tambahkan status lain jika ada
-        ];
-
-        foreach ($rekapan as $row) {
-            if (isset($statusCount[$row['status']])) {
-                $statusCount[$row['status']]++;
-            }
-        }
-
-        // Load view untuk PDF dan kirimkan data ke view
-        $html = view('konten/admin/absensi/pdf_rekapan', [
-            'rekapan' => $rekapan,
-            'bulan' => $bulan,
-            'tahun' => $tahun,
-            'statusCount' => $statusCount,  // Mengirimkan data jumlah status
-        ]);
-
-        // Inisialisasi Dompdf
-        $dompdf = new Dompdf();
-        $dompdf->loadHtml($html);
-        $dompdf->setPaper('A4', 'landscape');
-        $dompdf->render();
-        $dompdf->stream('Rekapan_Absensi_' . date('F_Y') . '.pdf', ['Attachment' => true]);
+    if (!empty($users_id)) {
+        $builder->where('users.id', $users_id);
     }
+
+    $rekapan = $builder->orderBy('users.nama', 'ASC')->orderBy('tanggal', 'ASC')->findAll();
+
+    // Hitung status
+    $statusCount = [
+        'Hadir' => 0,
+        'Sakit' => 0,
+        'Izin' => 0,
+        'Terlambat' => 0,
+    ];
+
+    foreach ($rekapan as $row) {
+        if (isset($statusCount[$row['status']])) {
+            $statusCount[$row['status']]++;
+        }
+    }
+
+    // Jika hanya 1 karyawan, ambil namanya, kalau banyak, kosongkan
+    $namaKaryawan = null;
+    if (!empty($users_id) && count($rekapan) > 0) {
+        $namaKaryawan = $rekapan[0]['nama_karyawan'];
+    }
+
+    $html = view('konten/admin/absensi/pdf_rekapan', [
+        'rekapan' => $rekapan,
+        'bulan' => $bulan,
+        'tahun' => $tahun,
+        'statusCount' => $statusCount,
+        'namaKaryawan' => $namaKaryawan, // Kirim nama karyawan jika ada
+        'allKaryawan' => empty($users_id), // Flag apakah semua karyawan
+    ]);
+
+    $dompdf = new Dompdf();
+    $dompdf->loadHtml($html);
+    $dompdf->setPaper('A4', 'portrait');
+    $dompdf->render();
+    $dompdf->stream('Rekapan_Absensi_' . date('F_Y') . '.pdf', ['Attachment' => true]);
+}
+
 }
