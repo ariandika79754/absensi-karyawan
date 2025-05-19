@@ -4,7 +4,7 @@
 <h4 class="py-3 mb-4"><span class="fw-light">Profil Karyawan</span></h4>
 <div class="row justify-content-center">
 
-    <?php if (empty($users['username']) || empty($karyawan['nama']) || empty($karyawan['no_hp']) || empty($karyawan['jenis_kelamin']) || empty($karyawan['alamat'])): ?>
+    <?php if (empty($users['username']) || empty($karyawan['nama']) || empty($karyawan['no_hp']) || empty($karyawan['jenis_kelamin']) || empty($karyawan['alamat'])|| empty($users['email'])): ?>
         <div class="alert alert-warning mt-3" role="alert">
             ⚠️ Lengkapi profil Anda terlebih dahulu.
         </div>
